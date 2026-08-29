@@ -1,0 +1,52 @@
+{
+  "numeric_features": [
+    "order_value",
+    "delivery_days",
+    "order_hour",
+    "is_weekend",
+    "account_age_days_at_order",
+    "hist_orders_before",
+    "hist_return_rate_before",
+    "hist_abusive_return_rate_before",
+    "hist_chargebacks_before",
+    "price_vs_category_avg",
+    "days_to_return"
+  ],
+  "categorical_features": [
+    "category",
+    "payment_method",
+    "return_reason"
+  ],
+  "encoded_feature_columns": [
+    "order_value",
+    "delivery_days",
+    "order_hour",
+    "is_weekend",
+    "account_age_days_at_order",
+    "hist_orders_before",
+    "hist_return_rate_before",
+    "hist_abusive_return_rate_before",
+    "hist_chargebacks_before",
+    "price_vs_category_avg",
+    "days_to_return",
+    "category_accessories",
+    "category_apparel",
+    "category_beauty",
+    "category_electronics",
+    "category_footwear",
+    "category_home",
+    "category_mobile",
+    "payment_method_COD",
+    "payment_method_UPI",
+    "payment_method_card",
+    "payment_method_wallet",
+    "return_reason_changed_mind",
+    "return_reason_damaged",
+    "return_reason_no_longer_needed",
+    "return_reason_not_as_described",
+    "return_reason_size_issue",
+    "return_reason_wrong_item"
+  ],
+  "target": "is_abusive_return",
+  "split_cutoff_date": "2025-10-01"
+}
