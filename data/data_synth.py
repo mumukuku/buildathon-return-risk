@@ -1,45 +1,3 @@
-"""
-RiskGuard synthetic data generator
-===================================
-
-Generates two datasets for the AI Risk Manager buildathon track:
-
-1. orders.csv        -> order/return-level data for the Return-Risk Scorer
-2. customers.csv      -> customer-level data, including shared-identifier
-                          fields (device / address / payment fingerprint)
-                          for the Abuse-Ring Sentinel
-
-IMPORTANT (read this before trusting any metric downstream):
-This is SYNTHETIC data. No real merchant, customer, or transaction data
-is used anywhere in this project. Ground-truth labels come from a known
-generative rule (defined below), which lets us honestly report precision/
-recall against something -- but it also means the numbers describe how
-well the model recovers OUR rule, not real-world fraud. We are explicit
-about this in the README and metrics report. The rule is designed to be
-realistic (grounded in publicly documented return-fraud patterns such as
-wardrobing and bracketing) but imperfectly separable -- i.e. we inject
-noise so that a perfect classifier is impossible, which is what real
-fraud data looks like.
-
-Customer behavior types (hidden from the model, used only to drive
-generation and for our own auditing):
-    - normal              (70%): occasional genuine returns
-    - occasional_returner  (18%): returns more often, still genuine
-    - serial_abuser         (7%): wardrobing / bracketing patterns
-    - ring_member           (5%): shares device/address/payment fingerprint
-                                   with other "distinct" accounts
-
-Two important design choices to avoid common ML mistakes:
-    1. NO LEAKAGE: rolling features (customer's historical return rate,
-       order count, chargeback count) are computed using only orders that
-       happened strictly BEFORE the current one, per customer, in time
-       order.
-    2. Hidden 'behavior_type' is NEVER written into orders.csv as a
-       feature -- only into customers.csv for our own auditing /
-       ring-detector evaluation. Using it as a model feature would be
-       cheating (it's essentially the label generator).
-"""
-
 import numpy as np
 import pandas as pd
 import hashlib
@@ -68,9 +26,8 @@ RETURN_REASONS = ["size_issue", "changed_mind", "damaged", "not_as_described", "
 BEHAVIOR_TYPES = ["normal", "occasional_returner", "serial_abuser", "ring_member"]
 BEHAVIOR_WEIGHTS = [0.70, 0.18, 0.07, 0.05]
 
-
+# Stable pseudo-hash standing in for a device/address/payment fingerprint.
 def make_fingerprint(seed_str: str) -> str:
-    """Stable pseudo-hash standing in for a device/address/payment fingerprint."""
     return hashlib.sha1(seed_str.encode()).hexdigest()[:12]
 
 
@@ -97,8 +54,6 @@ def build_customers(n: int) -> pd.DataFrame:
 
     # --- Build shared-identifier structures ---
     # 1) Genuine benign sharing (confounder): e.g. families / hostel mates
-    #    sharing an address. This is NOT abuse -- the ring detector must
-    #    learn to tell this apart from real abuse rings.
     benign_pool = df.sample(frac=0.06, random_state=1).index.tolist()
     rng.shuffle(benign_pool)
     bi = 0
@@ -114,9 +69,6 @@ def build_customers(n: int) -> pd.DataFrame:
         benign_group_num += 1
 
     # 2) Abuse rings: ring_member customers are grouped into rings of 3-9
-    #    that share device AND payment fingerprint (a much stronger, more
-    #    suspicious signal than just a shared address), simulating one
-    #    person operating several "distinct" accounts.
     ring_members = df.index[df["behavior_type"] == "ring_member"].tolist()
     rng.shuffle(ring_members)
     ri = 0

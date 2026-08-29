@@ -1,33 +1,3 @@
-"""
-RiskGuard feature engineering + train/test split
-==================================================
-
-Builds the model-ready table for the Return-Risk Scorer and produces a
-CHRONOLOGICAL train/test split (not random).
-
-Why chronological, not random:
-A random split can leak information: a customer's orders from later in
-the year end up in "train" alongside earlier orders from the same
-customer in "test", so the model can partially learn a customer's future
-via their other rows. A chronological split -- train on the first ~75%
-of the timeline, test on the last ~25% -- mimics how the model would
-actually be deployed (trained on the past, scored on the future) and
-gives an honest estimate of out-of-time performance.
-
-Modeling population:
-Only RETURNED orders are used. The question this model answers is
-"given a return is happening, how likely is it abusive?" -- not
-"will this order be returned?", which is a different (also useful, but
-separate) problem.
-
-Feature list intentionally EXCLUDES:
-    - order_id, customer_id, order_date          (identifiers / leakage risk)
-    - device/address/payment fingerprint          (reserved for the abuse-ring
-                                                     sentinel, a separate model)
-    - _behavior_type                              (audit-only ground-truth
-                                                     generator, never a feature)
-"""
-
 import json
 import pandas as pd
 
@@ -60,9 +30,7 @@ def main():
     returns = df[df["is_returned"] == 1].copy()
     returns = returns.sort_values("order_date").reset_index(drop=True)
 
-    # One-hot encode categoricals. drop_first=False so the feature list is
-    # stable and self-explanatory when served later (each category gets an
-    # explicit column rather than an implicit reference level).
+    # One-hot encode categoricals
     encoded = pd.get_dummies(returns[CATEGORICAL_FEATURES], prefix=CATEGORICAL_FEATURES)
     feature_df = pd.concat(
         [returns[["order_id", "customer_id", "order_date"]],
