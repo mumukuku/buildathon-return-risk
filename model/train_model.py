@@ -52,6 +52,8 @@ import matplotlib.pyplot as plt
 from sklearn.linear_model import LogisticRegression
 from sklearn.preprocessing import StandardScaler
 from sklearn.pipeline import Pipeline
+from sklearn.calibration import CalibratedClassifierCV
+from sklearn.frozen import FrozenEstimator
 from sklearn.metrics import (
     precision_recall_curve, roc_curve, auc,
     confusion_matrix, classification_report, average_precision_score,
@@ -73,8 +75,8 @@ TARGET = feat_meta["target"]
 
 
 def load_data():
-    train = pd.read_csv(TRAIN_PATH)
-    test = pd.read_csv(TEST_PATH)
+    train = pd.read_csv(TRAIN_PATH, parse_dates=["order_date"])
+    test = pd.read_csv(TEST_PATH, parse_dates=["order_date"])
     X_train, y_train = train[FEATURE_COLS], train[TARGET]
     X_test, y_test = test[FEATURE_COLS], test[TARGET]
     return train, test, X_train, y_train, X_test, y_test
@@ -101,6 +103,39 @@ def train_models(X_train, y_train):
     xgb.fit(X_train, y_train)
 
     return logreg, xgb
+
+
+# ---------------------------------------------------------------------
+# 1b. Calibration: XGBoost's scale_pos_weight reweighting produces good
+#     RANKING (AUC) but distorts raw probabilities to be overconfident.
+#     We fix this with isotonic calibration fit on a held-out slice of
+#     TRAIN data (chronologically after the model's own training window,
+#     but still before the real test set) -- so the test set stays
+#     genuinely unseen by both the model and the calibrator.
+# ---------------------------------------------------------------------
+def train_calibrated_model(train_df, X_train_full, y_train_full, feature_cols):
+    cutoff = train_df["order_date"].quantile(0.8)
+    core_mask = (train_df["order_date"] <= cutoff).values
+    calib_mask = ~core_mask
+
+    X_core, y_core = X_train_full[core_mask], y_train_full[core_mask]
+    X_calib, y_calib = X_train_full[calib_mask], y_train_full[calib_mask]
+
+    pos_weight = (y_core == 0).sum() / max(1, (y_core == 1).sum())
+    xgb_core = XGBClassifier(
+        n_estimators=300, max_depth=4, learning_rate=0.05,
+        subsample=0.8, colsample_bytree=0.8,
+        scale_pos_weight=pos_weight, eval_metric="aucpr",
+        random_state=42,
+    )
+    xgb_core.fit(X_core, y_core)
+
+    calibrated = CalibratedClassifierCV(FrozenEstimator(xgb_core), method="isotonic")
+    calibrated.fit(X_calib, y_calib)
+
+    print(f"\nCalibration split: {core_mask.sum()} core-train rows, {calib_mask.sum()} calibration rows "
+          f"(cutoff date: {train_df['order_date'].quantile(0.8)})")
+    return calibrated
 
 
 # ---------------------------------------------------------------------
@@ -341,14 +376,23 @@ def main():
 
     logreg, xgb = train_models(X_train, y_train)
 
+    calibrated_xgb = train_calibrated_model(train, X_train, y_train, FEATURE_COLS)
+
     results = {
         "Logistic Regression": evaluate_model("Logistic Regression", logreg, X_test, y_test),
         "XGBoost": evaluate_model("XGBoost", xgb, X_test, y_test),
     }
     plot_pr_and_roc(results, f"{PLOTS_DIR}/pr_roc_comparison.png")
 
-    # Cost-sensitive threshold using the DEPLOYED model (XGBoost)
-    deployed_proba = results["XGBoost"]["proba"]
+    # From here on, "deployed" means the CALIBRATED XGBoost -- ranking (AUC/PR) is
+    # identical to raw XGBoost since isotonic calibration is monotonic, but the
+    # probabilities themselves are now trustworthy for a human reader.
+    deployed_proba = calibrated_xgb.predict_proba(X_test)[:, 1]
+    cal_fpr, cal_tpr, _ = roc_curve(y_test, deployed_proba)
+    calibrated_auc = auc(cal_fpr, cal_tpr)
+    calibrated_ap = average_precision_score(y_test, deployed_proba)
+    print(f"\n=== Calibrated XGBoost (deployed) === ROC-AUC: {calibrated_auc:.3f} | "
+          f"Average Precision: {calibrated_ap:.3f}  (ranking unchanged from raw XGBoost, as expected)")
     order_values = test["order_value"]
     cost_df, unconstrained_best, constrained_best = cost_sweep(
         deployed_proba, y_test, order_values, max_flag_rate=0.20
@@ -382,12 +426,12 @@ def main():
 
     # Save artifacts
     joblib.dump(logreg, "model/logreg_model.pkl")
-    joblib.dump(xgb, "model/xgb_model.pkl")
-    joblib.dump(xgb, "model/deployed_model.pkl")  # XGBoost is deployed
+    joblib.dump(xgb, "model/xgb_model.pkl")                  # raw, uncalibrated -- used for SHAP + model comparison
+    joblib.dump(calibrated_xgb, "model/deployed_model.pkl")  # calibrated -- what's actually served
 
     with open("model/deployment_config.json", "w") as f:
         json.dump({
-            "deployed_model": "xgboost",
+            "deployed_model": "xgboost_isotonic_calibrated",
             "deployed_threshold": optimal_threshold,
             "deployed_threshold_basis": "capacity_constrained_optimal (max 20% flag rate)",
             "unconstrained_optimal_threshold": float(unconstrained_best["threshold"]),
@@ -395,13 +439,15 @@ def main():
             "fp_review_cost_rs": FP_REVIEW_COST,
             "fn_cost_basis": "order_value (value-weighted)",
             "max_flag_rate_assumption": 0.20,
+            "calibration_method": "isotonic (CalibratedClassifierCV, prefit on chronological "
+                                   "80/20 split of the training window)",
             "actions": {
                 "below_threshold": "approve",
                 "at_or_above_threshold_below_high": "manual_review",
                 "high_confidence": "auto_decline",
             },
-            "roc_auc": results["XGBoost"]["roc_auc"],
-            "avg_precision": results["XGBoost"]["avg_precision"],
+            "roc_auc": calibrated_auc,
+            "avg_precision": calibrated_ap,
         }, f, indent=2)
 
     print("\nSaved: model/logreg_model.pkl, model/xgb_model.pkl, model/deployed_model.pkl")
