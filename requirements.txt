@@ -1,16 +1,28 @@
 # Python 3.12.3
-# Install with: pip install -r requirements.txt
+#
+# IMPORTANT: Vercel's Python runtime installs from ONE project-wide
+# requirements.txt (confirmed via Vercel docs, Aug 2026) -- there is no
+# per-function scoping. So this file must stay lean; it is what actually
+# gets deployed for api/index.py.
+#
+# Deliberately EXCLUDES matplotlib, networkx, and shap:
+#   - matplotlib/networkx are only used by the offline training scripts
+#     in model/ (plots, graph clustering) -- never at request time.
+#   - shap is not needed either: api/lib/scoring.py uses XGBoost's native
+#     pred_contribs=True instead, which runs the same Tree SHAP algorithm
+#     inside XGBoost's own C++ core. Importing shap transitively pulls in
+#     numba (bundles a full LLVM via llvmlite, ~150-250MB) plus
+#     matplotlib's font/backend stack -- that's what blew our first two
+#     deploys past Vercel's 500MB Python function limit (889MB actual).
+#
+# For LOCAL TRAINING / notebook work (running model/*.py scripts), also
+# install requirements-training.txt:
+#     pip install -r requirements.txt -r requirements-training.txt
 
+fastapi==0.141.1
+pydantic==2.9.2
+joblib==1.5.3
+numpy==2.4.4
+pandas==3.0.2
 scikit-learn==1.8.0
 xgboost==3.4.1
-shap==0.52.0
-matplotlib==3.10.8
-pandas==3.0.2
-numpy==2.4.4
-networkx==3.6.1
-joblib==1.5.3
-
-# Added for the API layer (next step) -- pins may be adjusted for
-# Vercel's Python serverless runtime compatibility when we get there.
-fastapi==0.141.1
-uvicorn==0.52.4

@@ -1,0 +1,10 @@
+# Additional dependencies needed ONLY for local training/notebook work
+# (model/generate_data.py, model/train_model.py, model/abuse_ring_detector.py,
+# model/calibration_and_fairness.py, etc.) -- never installed on Vercel.
+#
+# Install alongside the root requirements.txt:
+#     pip install -r requirements.txt -r requirements-training.txt
+
+matplotlib==3.10.8
+networkx==3.6.1
+shap==0.52.0

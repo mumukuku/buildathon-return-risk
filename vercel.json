@@ -1,7 +1,8 @@
 {
   "functions": {
     "api/index.py": {
-      "maxDuration": 30
+      "maxDuration": 30,
+      "excludeFiles": "{data/**,notebooks/**,plots/**,docs/**,model/**,frontend/**,requirements-training.txt,*.md}"
     }
   },
   "rewrites": [
