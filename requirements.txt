@@ -1,0 +1,16 @@
+# Python 3.12.3
+# Install with: pip install -r requirements.txt
+
+scikit-learn==1.8.0
+xgboost==3.4.1
+shap==0.52.0
+matplotlib==3.10.8
+pandas==3.0.2
+numpy==2.4.4
+networkx==3.6.1
+joblib==1.5.3
+
+# Added for the API layer (next step) -- pins may be adjusted for
+# Vercel's Python serverless runtime compatibility when we get there.
+fastapi==0.141.1
+uvicorn==0.52.4
