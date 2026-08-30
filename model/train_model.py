@@ -1,3 +1,48 @@
+"""
+RiskGuard model training + evaluation
+=======================================
+
+Trains two models on the return-risk task and evaluates both HONESTLY on
+the held-out (chronological) test set:
+
+    1. Logistic Regression -- fully interpretable, coefficients read
+       directly as feature contributions.
+    2. XGBoost              -- captures feature interactions, typically
+                                stronger on tabular fraud-style data.
+
+We report both. We DEPLOY XGBoost (see README for the reasoning: on this
+task it meaningfully outperforms logistic regression, and we recover
+explainability via SHAP rather than by picking the weaker model).
+
+This script also implements the piece the track explicitly asks for:
+a COST-SENSITIVE THRESHOLD, not just a default 0.5 cutoff. A fraud
+classifier's job isn't "get the highest accuracy" -- it's "minimize the
+merchant's total dollar loss," and false positives and false negatives
+have very different, documented costs here:
+
+    - False Positive cost  = FP_REVIEW_COST (flat)
+        A genuine return gets flagged for manual review / friction.
+        Assumption: this costs the merchant a flat review/ops cost plus
+        customer-goodwill risk. We use Rs. 150 as a placeholder -- this
+        number should be replaced with a merchant's real support-ticket
+        cost + estimated churn risk in a production setting.
+
+    - False Negative cost  = the order's value (order_value)
+        A genuinely abusive return slips through undetected. Assumption:
+        the merchant's loss is proportional to the value of the item
+        being fraudulently returned (not a flat number), since the
+        actual financial exposure scales with order size. This is more
+        realistic than a single flat FN cost.
+
+We sweep decision thresholds and report the TOTAL EXPECTED COST at each
+one, picking the threshold that minimizes it -- then compare that to the
+naive default of 0.5, to show explicitly how much a cost-aware threshold
+saves versus an accuracy-only mindset.
+
+All numbers here are ASSUMPTIONS, clearly labeled. Swap in real costs if
+you have them; the machinery (sweep + argmin) doesn't change.
+"""
+
 import json
 import joblib
 import numpy as np
@@ -19,7 +64,7 @@ TEST_PATH = "data/test.csv"
 FEATURE_LIST_PATH = "model/feature_columns.json"
 PLOTS_DIR = "plots"
 
-FP_REVIEW_COST = 150.0 
+FP_REVIEW_COST = 150.0  # Rs. -- flat cost of a false positive (see docstring)
 
 with open(FEATURE_LIST_PATH) as f:
     feat_meta = json.load(f)
@@ -35,8 +80,9 @@ def load_data():
     return train, test, X_train, y_train, X_test, y_test
 
 
-
-# -- Train both models --
+# ---------------------------------------------------------------------
+# 1. Train both models
+# ---------------------------------------------------------------------
 def train_models(X_train, y_train):
     logreg = Pipeline([
         ("scaler", StandardScaler()),
@@ -57,7 +103,9 @@ def train_models(X_train, y_train):
     return logreg, xgb
 
 
-# -- Standard evaluation: PR curve, ROC, average precision --
+# ---------------------------------------------------------------------
+# 2. Standard evaluation: PR curve, ROC, average precision
+# ---------------------------------------------------------------------
 def evaluate_model(name, model, X_test, y_test):
     proba = model.predict_proba(X_test)[:, 1]
     precision, recall, pr_thresholds = precision_recall_curve(y_test, proba)
@@ -96,9 +144,29 @@ def plot_pr_and_roc(results, out_path):
     plt.close()
 
 
-# -- Cost-sensitive threshold sweep (the key "false-positive cost" deliverable) --
+# ---------------------------------------------------------------------
+# 3. Cost-sensitive threshold sweep (the key "false-positive cost" deliverable)
+# ---------------------------------------------------------------------
 def cost_sweep(proba, y_test, order_values, thresholds=None, max_flag_rate=0.20):
+    """
+    Sweeps thresholds and reports total expected cost at each one.
 
+    IMPORTANT FINDING (kept in, not smoothed over): minimizing the flat-FP /
+    value-weighted-FN cost function with NO other constraint pushes the
+    threshold down to ~0.04, which flags roughly 80% of all returns for
+    review. That is mathematically "cheapest" under this cost function, but
+    operationally absurd -- no fraud-ops team can manually review 80% of
+    returns, and a flat Rs.150 review cost does not capture the real cost of
+    treating most genuine customers as suspects (trust erosion, team
+    overload, brand damage aren't linear in flag count).
+
+    So we report TWO thresholds:
+      - "unconstrained_optimal": minimizes total_cost with no other limits.
+      - "capacity_constrained_optimal": minimizes total_cost subject to
+        flag_rate <= max_flag_rate (default 20% of all returns), a stand-in
+        for a fraud-ops team's real review capacity. This is the one we
+        actually deploy -- see README for the reasoning.
+    """
     if thresholds is None:
         thresholds = np.linspace(0.01, 0.99, 99)
 
@@ -179,7 +247,9 @@ def plot_confusion(y_test, proba, threshold, out_path, title_suffix=""):
     plt.close()
 
 
-# -- SHAP explainability for the deployed model (XGBoost) --
+# ---------------------------------------------------------------------
+# 4. SHAP explainability for the deployed model (XGBoost)
+# ---------------------------------------------------------------------
 def plot_shap_summary(xgb_model, X_test, out_path, sample_n=500):
     sample = X_test.sample(min(sample_n, len(X_test)), random_state=42)
     explainer = shap.TreeExplainer(xgb_model)
@@ -188,6 +258,82 @@ def plot_shap_summary(xgb_model, X_test, out_path, sample_n=500):
     plt.tight_layout()
     plt.savefig(out_path, dpi=150)
     plt.close()
+
+
+# ---------------------------------------------------------------------
+# 5. Baseline: naive rule-based heuristic (what a merchant might do without ML)
+# ---------------------------------------------------------------------
+def baseline_heuristic_predictions(test_df: pd.DataFrame) -> np.ndarray:
+    """
+    A simple, fixed-threshold rule a fraud-ops team might use without any
+    ML at all -- no tuning, no probability, just business logic:
+
+        Flag if ANY of:
+          (a) returned within 3 days AND priced well above category average
+              (classic "fast expensive return" red flag)
+          (b) customer's historical abusive-return rate is already high
+              (known repeat offender)
+          (c) customer's overall historical return rate is very high
+              (serial returner / bracketer, even if not yet confirmed abusive)
+
+    This is the honest comparison point: if our ML model can't beat this,
+    the ML isn't earning its complexity.
+    """
+    fast_expensive = (test_df["days_to_return"] <= 3) & (test_df["price_vs_category_avg"] >= 1.5)
+    known_abuser = test_df["hist_abusive_return_rate_before"] >= 0.4
+    serial_returner = test_df["hist_return_rate_before"] >= 0.6
+    flagged = fast_expensive | known_abuser | serial_returner
+    return flagged.astype(int).values
+
+
+def compare_to_baseline(test_df, y_test, ml_proba, ml_threshold, order_values):
+    baseline_preds = baseline_heuristic_predictions(test_df)
+
+    def summarize(preds, name):
+        tp = ((preds == 1) & (y_test.values == 1)).sum()
+        fp = ((preds == 1) & (y_test.values == 0)).sum()
+        fn = ((preds == 0) & (y_test.values == 1)).sum()
+        precision = tp / (tp + fp) if (tp + fp) > 0 else 0.0
+        recall = tp / (tp + fn) if (tp + fn) > 0 else 0.0
+        f1 = 2 * precision * recall / (precision + recall) if (precision + recall) > 0 else 0.0
+        flag_rate = (preds == 1).mean()
+        fp_cost = fp * FP_REVIEW_COST
+        fn_cost = order_values.values[(preds == 0) & (y_test.values == 1)].sum()
+        total_cost = fp_cost + fn_cost
+        return {"name": name, "precision": precision, "recall": recall, "f1": f1,
+                "flag_rate": flag_rate, "total_cost": total_cost, "tp": int(tp), "fp": int(fp), "fn": int(fn)}
+
+    ml_preds = (ml_proba >= ml_threshold).astype(int)
+
+    rows = [
+        summarize(baseline_preds, "Rule-based baseline"),
+        summarize(ml_preds, "XGBoost (capacity-constrained threshold)"),
+    ]
+    comparison_df = pd.DataFrame(rows)
+    print("\n=== Baseline vs. ML comparison (held-out test set) ===")
+    print(comparison_df.to_string(index=False))
+
+    fig, ax = plt.subplots(figsize=(8, 5))
+    metrics_to_plot = ["precision", "recall", "f1"]
+    x = np.arange(len(metrics_to_plot))
+    width = 0.35
+    ax.bar(x - width/2, comparison_df.iloc[0][metrics_to_plot], width, label="Rule-based baseline")
+    ax.bar(x + width/2, comparison_df.iloc[1][metrics_to_plot], width, label="XGBoost (ours)")
+    ax.set_xticks(x); ax.set_xticklabels(["Precision", "Recall", "F1"])
+    ax.set_ylim(0, 1)
+    ax.set_title("ML model vs. naive rule-based baseline")
+    ax.legend()
+    ax.grid(alpha=0.3, axis="y")
+    for i, m in enumerate(metrics_to_plot):
+        for j, row_idx in enumerate([0, 1]):
+            val = comparison_df.iloc[row_idx][m]
+            ax.text(i + (j - 0.5) * width, val + 0.02, f"{val:.2f}", ha="center", fontsize=9)
+    plt.tight_layout()
+    plt.savefig(f"{PLOTS_DIR}/baseline_comparison.png", dpi=150)
+    plt.close()
+
+    comparison_df.to_csv("model/baseline_comparison.csv", index=False)
+    return comparison_df
 
 
 def main():
@@ -230,6 +376,9 @@ def main():
                     f"{PLOTS_DIR}/confusion_naive.png", " (naive default)")
 
     plot_shap_summary(xgb, X_test, f"{PLOTS_DIR}/shap_summary.png")
+
+    # Baseline comparison
+    baseline_df = compare_to_baseline(test, y_test, deployed_proba, optimal_threshold, order_values)
 
     # Save artifacts
     joblib.dump(logreg, "model/logreg_model.pkl")
