@@ -1,0 +1,26 @@
+{
+  "test_window_days": 90,
+  "total_orders_in_window": 12489,
+  "baseline_cost_rs": 810063.27,
+  "ml_cost_rs": 469555.67,
+  "savings_in_window_rs": 340507.60000000003,
+  "savings_per_order_rs": 27.264600848746902,
+  "projections": [
+    {
+      "monthly_order_volume": 50000,
+      "projected_monthly_savings_rs": 1363230.0,
+      "projected_annual_savings_rs": 16358761.0
+    },
+    {
+      "monthly_order_volume": 500000,
+      "projected_monthly_savings_rs": 13632300.0,
+      "projected_annual_savings_rs": 163587605.0
+    },
+    {
+      "monthly_order_volume": 2000000,
+      "projected_monthly_savings_rs": 54529202.0,
+      "projected_annual_savings_rs": 654350420.0
+    }
+  ],
+  "caveat": "Linear extrapolation assuming the merchant's return rate, abuse rate, and order-value distribution match this synthetic population. Recompute on real historical data before relying on this for a business decision."
+}

@@ -1,0 +1,94 @@
+{
+  "orders": [
+    {
+      "label": "Wardrobing-pattern return (repeat offender)",
+      "order_value": 1348.91,
+      "delivery_days": 5,
+      "order_hour": 6,
+      "is_weekend": 0,
+      "account_age_days_at_order": 453,
+      "hist_orders_before": 5,
+      "hist_return_rate_before": 0.2,
+      "hist_abusive_return_rate_before": 0.2,
+      "hist_chargebacks_before": 0,
+      "price_vs_category_avg": 0.964,
+      "days_to_return": 13,
+      "category": "apparel",
+      "payment_method": "wallet",
+      "return_reason": "size_issue",
+      "ground_truth_is_abusive": 1
+    },
+    {
+      "label": "High-frequency abuser with prior chargebacks",
+      "order_value": 1408.18,
+      "delivery_days": 4,
+      "order_hour": 17,
+      "is_weekend": 0,
+      "account_age_days_at_order": 1124,
+      "hist_orders_before": 13,
+      "hist_return_rate_before": 0.5385,
+      "hist_abusive_return_rate_before": 0.3077,
+      "hist_chargebacks_before": 2,
+      "price_vs_category_avg": 0.64,
+      "days_to_return": 13,
+      "category": "footwear",
+      "payment_method": "UPI",
+      "return_reason": "size_issue",
+      "ground_truth_is_abusive": 1
+    },
+    {
+      "label": "Genuine damaged-item return",
+      "order_value": 996.68,
+      "delivery_days": 2,
+      "order_hour": 16,
+      "is_weekend": 0,
+      "account_age_days_at_order": 1235,
+      "hist_orders_before": 16,
+      "hist_return_rate_before": 0.0625,
+      "hist_abusive_return_rate_before": 0.0,
+      "hist_chargebacks_before": 0,
+      "price_vs_category_avg": 0.554,
+      "days_to_return": 7,
+      "category": "home",
+      "payment_method": "card",
+      "return_reason": "damaged",
+      "ground_truth_is_abusive": 0
+    },
+    {
+      "label": "Long-standing loyal customer, rare return",
+      "order_value": 652.95,
+      "delivery_days": 5,
+      "order_hour": 7,
+      "is_weekend": 1,
+      "account_age_days_at_order": 1164,
+      "hist_orders_before": 9,
+      "hist_return_rate_before": 0.0,
+      "hist_abusive_return_rate_before": 0.0,
+      "hist_chargebacks_before": 0,
+      "price_vs_category_avg": 0.726,
+      "days_to_return": 15,
+      "category": "accessories",
+      "payment_method": "card",
+      "return_reason": "size_issue",
+      "ground_truth_is_abusive": 0
+    }
+  ],
+  "clusters": [
+    {
+      "label": "Likely abuse ring (shared device, high return rate)",
+      "members": [
+        {"customer_id": "DEMO_A1", "device_fingerprint": "shared-dev-1", "payment_fingerprint": "pay-1", "address_fingerprint": "addr-1", "account_age_days": 40, "return_rate": 0.8, "abusive_return_rate": 0.7, "total_orders": 5},
+        {"customer_id": "DEMO_A2", "device_fingerprint": "shared-dev-1", "payment_fingerprint": "pay-2", "address_fingerprint": "addr-2", "account_age_days": 35, "return_rate": 0.75, "abusive_return_rate": 0.6, "total_orders": 4},
+        {"customer_id": "DEMO_A3", "device_fingerprint": "shared-dev-1", "payment_fingerprint": "pay-3", "address_fingerprint": "addr-3", "account_age_days": 50, "return_rate": 0.9, "abusive_return_rate": 0.8, "total_orders": 6},
+        {"customer_id": "DEMO_A4", "device_fingerprint": "shared-dev-1", "payment_fingerprint": "pay-4", "address_fingerprint": "addr-4", "account_age_days": 30, "return_rate": 0.85, "abusive_return_rate": 0.75, "total_orders": 5}
+      ]
+    },
+    {
+      "label": "Likely benign (family sharing an address)",
+      "members": [
+        {"customer_id": "DEMO_B1", "device_fingerprint": "dev-b1", "payment_fingerprint": "pay-b1", "address_fingerprint": "shared-addr-1", "account_age_days": 600, "return_rate": 0.1, "abusive_return_rate": 0.0, "total_orders": 20},
+        {"customer_id": "DEMO_B2", "device_fingerprint": "dev-b2", "payment_fingerprint": "pay-b2", "address_fingerprint": "shared-addr-1", "account_age_days": 700, "return_rate": 0.15, "abusive_return_rate": 0.0, "total_orders": 18}
+      ]
+    }
+  ]
+}
