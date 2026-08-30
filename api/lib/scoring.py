@@ -6,8 +6,21 @@ Loaded once per serverless function cold start, reused across warm
 invocations. Encodes a raw order dict into the model's feature space
 EXACTLY the way prepare_features.py did during training (same one-hot
 columns, same order, zero-filled if a category/reason wasn't seen),
-scores it with the calibrated model, and returns a decision + SHAP-based
-explanation.
+scores it with the calibrated model, and returns a decision + a
+SHAP-equivalent explanation.
+
+NOTE ON EXPLAINABILITY: this deliberately does NOT import the `shap`
+package. `import shap` transitively pulls in numba (which bundles a full
+LLVM via llvmlite -- commonly 150-250MB installed), plus matplotlib and
+its font/backend stack, none of which are needed for scoring a single
+order. That pushed our first Vercel deployment to an 889MB bundle,
+blowing past the platform's 500MB Python function limit.
+
+Instead we use XGBoost's OWN native `pred_contribs=True` prediction
+mode, which computes the exact same Tree SHAP algorithm inside XGBoost's
+C++ core -- mathematically identical output to shap.TreeExplainer for a
+tree model, with zero extra dependencies. This is not an approximation
+or a downgrade; it's the same numbers via a lighter path.
 """
 
 import json
@@ -18,7 +31,7 @@ from datetime import datetime, timezone
 import joblib
 import numpy as np
 import pandas as pd
-import shap
+import xgboost as xgb
 
 MODELS_DIR = os.path.join(os.path.dirname(__file__), "..", "models")
 
@@ -28,14 +41,13 @@ with open(os.path.join(MODELS_DIR, "deployment_config.json")) as f:
     DEPLOY_CFG = json.load(f)
 
 DEPLOYED_MODEL = joblib.load(os.path.join(MODELS_DIR, "deployed_model.pkl"))  # calibrated -- for the score
-RAW_XGB_MODEL = joblib.load(os.path.join(MODELS_DIR, "xgb_model.pkl"))       # uncalibrated tree -- for SHAP
+RAW_XGB_MODEL = joblib.load(os.path.join(MODELS_DIR, "xgb_model.pkl"))       # uncalibrated tree -- for contributions
+_BOOSTER = RAW_XGB_MODEL.get_booster()
 
 ENCODED_COLS = FEATURE_META["encoded_feature_columns"]
 NUMERIC_COLS = FEATURE_META["numeric_features"]
 CATEGORICAL_COLS = FEATURE_META["categorical_features"]
 THRESHOLD = DEPLOY_CFG["deployed_threshold"]
-
-_SHAP_EXPLAINER = shap.TreeExplainer(RAW_XGB_MODEL)
 
 
 def encode_order(order: dict) -> pd.DataFrame:
@@ -55,8 +67,10 @@ def encode_order(order: dict) -> pd.DataFrame:
 
 
 def top_shap_factors(X_row: pd.DataFrame, n=5):
-    shap_values = _SHAP_EXPLAINER(X_row)
-    contributions = list(zip(X_row.columns, shap_values.values[0]))
+    dmat = xgb.DMatrix(X_row, feature_names=list(X_row.columns))
+    contribs = _BOOSTER.predict(dmat, pred_contribs=True)[0]  # last entry is the bias term
+    feature_contribs = contribs[:-1]
+    contributions = list(zip(X_row.columns, feature_contribs))
     contributions.sort(key=lambda c: abs(c[1]), reverse=True)
     return [
         {"feature": feat, "value": float(X_row.iloc[0][feat]), "impact": float(impact)}
