@@ -29,6 +29,48 @@ RING_THRESHOLD = RING_CFG["deployed_threshold"]
 SAMPLE_CLUSTERS_DF = pd.read_csv(os.path.join(MODELS_DIR, "abuse_ring_clusters.csv"))
 
 
+# ---------------------------------------------------------------------
+# Plain-English explanation (same deterministic, template-based approach
+# as the return-risk model -- see api/lib/scoring.py for the reasoning)
+# ---------------------------------------------------------------------
+RING_FEATURE_TEMPLATES = {
+    "size": ("this is a larger cluster of linked accounts", "this is a small cluster of linked accounts"),
+    "shares_device": ("these accounts share the same device", "these accounts do not share a device"),
+    "shares_payment": ("these accounts share the same payment method", "these accounts do not share a payment method"),
+    "shares_address": ("these accounts share the same address", "these accounts do not share an address"),
+    "shares_device_and_payment": (
+        "these accounts share both device and payment method, a strong ring signal",
+        "these accounts do not share both device and payment together",
+    ),
+    "avg_account_age": ("the accounts are relatively old on average", "the accounts are relatively new on average"),
+    "account_age_std": ("account ages vary widely within the cluster", "account ages are similar within the cluster"),
+    "avg_return_rate": ("the cluster has an unusually high average return rate", "the cluster has a normal average return rate"),
+    "max_return_rate": ("at least one member has an extremely high return rate", "no member has an extreme return rate"),
+    "avg_abusive_return_rate": ("the cluster has a history of abusive returns", "the cluster has little history of abusive returns"),
+    "max_abusive_return_rate": ("at least one member has a high abusive-return rate", "no member has a high abusive-return rate"),
+    "avg_total_orders": ("members have placed many orders on average", "members have placed few orders on average"),
+}
+
+
+def describe_ring_feature(feature: str, impact: float) -> str:
+    if feature in RING_FEATURE_TEMPLATES:
+        toward_ring, toward_benign = RING_FEATURE_TEMPLATES[feature]
+        return toward_ring if impact >= 0 else toward_benign
+    return feature.replace("_", " ")
+
+
+def ring_plain_english_explanation(factors: list, verdict: str, top_n: int = 3) -> str:
+    lead = "Flagged as a likely ring" if verdict == "likely_ring" else "Assessed as likely benign sharing"
+    clauses = [describe_ring_feature(f["feature"], f["impact"]) for f in factors[:top_n]]
+    if len(clauses) == 1:
+        joined = clauses[0]
+    elif len(clauses) == 2:
+        joined = f"{clauses[0]}, and {clauses[1]}"
+    else:
+        joined = f"{', '.join(clauses[:-1])}, and {clauses[-1]}"
+    return f"{lead} mainly because: {joined}."
+
+
 def score_cluster(cluster: dict) -> dict:
     row = {col: cluster.get(col, 0) for col in RING_FEATURE_COLS}
     X_row = pd.DataFrame([row], columns=RING_FEATURE_COLS)
@@ -37,16 +79,26 @@ def score_cluster(cluster: dict) -> dict:
 
     coefs = dict(zip(RING_FEATURE_COLS, RING_MODEL.coef_[0]))
     contributions = sorted(
-        [{"feature": f, "value": row[f], "coefficient": float(coefs[f])} for f in RING_FEATURE_COLS],
-        key=lambda c: abs(c["coefficient"] * (c["value"] if isinstance(c["value"], (int, float)) else 1)),
+        [
+            {
+                "feature": f,
+                "value": row[f],
+                "coefficient": float(coefs[f]),
+                "impact": float(coefs[f] * row[f]) if isinstance(row[f], (int, float)) else float(coefs[f]),
+            }
+            for f in RING_FEATURE_COLS
+        ],
+        key=lambda c: abs(c["impact"]),
         reverse=True,
     )
+    explanation = ring_plain_english_explanation(contributions, verdict)
 
     return {
         "ring_score": round(ring_score, 4),
         "threshold_used": RING_THRESHOLD,
         "verdict": verdict,
         "top_factors": contributions[:5],
+        "plain_english_summary": explanation,
     }
 
 

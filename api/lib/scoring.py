@@ -86,11 +86,104 @@ def decide_action(risk_score: float) -> str:
     return "approve"
 
 
+# ---------------------------------------------------------------------
+# Plain-English explanation
+# ---------------------------------------------------------------------
+# Deliberately TEMPLATE-BASED, not LLM-generated. A risk decision needs an
+# explanation that is reproducible and auditable -- the same inputs must
+# always produce the same explanation, with no chance of an LLM paraphrasing
+# differently on retry or, worse, hallucinating a reason the model didn't
+# actually use. Every phrase below is a direct, deterministic translation of
+# a real feature contribution, never a generated summary of one.
+FEATURE_TEMPLATES = {
+    "hist_abusive_return_rate_before": (
+        "this customer has a history of abusive returns",
+        "this customer has no history of abusive returns",
+    ),
+    "hist_return_rate_before": (
+        "this customer returns items unusually often",
+        "this customer rarely returns items",
+    ),
+    "price_vs_category_avg": (
+        "the item is priced well above similar products (a wardrobing red flag)",
+        "the item is priced in line with similar products",
+    ),
+    "days_to_return": (
+        "the return came in close to the return-window deadline",
+        "the return came in quickly after purchase",
+    ),
+    "hist_chargebacks_before": (
+        "this customer has past chargebacks on file",
+        "this customer has no chargeback history",
+    ),
+    "hist_orders_before": (
+        "this is a newer account with limited order history",
+        "this customer has an established order history",
+    ),
+    "account_age_days_at_order": (
+        "the account is relatively new",
+        "the account is well-established",
+    ),
+    "order_value": (
+        "this is a high-value order",
+        "this is a lower-value order",
+    ),
+    "delivery_days": (
+        "delivery took longer than usual",
+        "delivery was quick",
+    ),
+    "order_hour": (
+        "the order was placed at an unusual hour",
+        "the order was placed at a typical hour",
+    ),
+    "is_weekend": (
+        "the order was placed on a weekend",
+        "the order was placed on a weekday",
+    ),
+}
+ONEHOT_PREFIX_LABELS = {
+    "category_": "the item category is",
+    "payment_method_": "payment was made via",
+    "return_reason_": "the stated return reason was",
+}
+
+
+def describe_feature(feature: str, impact: float) -> str:
+    """Translate one feature contribution into a plain-English clause."""
+    if feature in FEATURE_TEMPLATES:
+        risk_up_text, risk_down_text = FEATURE_TEMPLATES[feature]
+        return risk_up_text if impact >= 0 else risk_down_text
+    for prefix, label in ONEHOT_PREFIX_LABELS.items():
+        if feature.startswith(prefix):
+            name = feature[len(prefix):].replace("_", " ")
+            return f"{label} '{name}'"
+    return feature.replace("_", " ")  # fallback for anything unmapped
+
+
+def plain_english_explanation(factors: list, action: str, top_n: int = 3) -> str:
+    lead = {
+        "approve": "Approved",
+        "manual_review": "Sent to manual review",
+        "auto_decline": "Auto-declined",
+    }[action]
+
+    clauses = [describe_feature(f["feature"], f["impact"]) for f in factors[:top_n]]
+    if len(clauses) == 1:
+        joined = clauses[0]
+    elif len(clauses) == 2:
+        joined = f"{clauses[0]}, and {clauses[1]}"
+    else:
+        joined = f"{', '.join(clauses[:-1])}, and {clauses[-1]}"
+
+    return f"{lead} mainly because: {joined}."
+
+
 def score_order(order: dict) -> dict:
     X_row = encode_order(order)
     risk_score = float(DEPLOYED_MODEL.predict_proba(X_row)[:, 1][0])
     action = decide_action(risk_score)
     factors = top_shap_factors(X_row)
+    explanation = plain_english_explanation(factors, action)
 
     # Audit record: in production this would be persisted to a durable,
     # queryable store (a database or a service like Vercel KV) for
@@ -105,6 +198,7 @@ def score_order(order: dict) -> dict:
         "threshold_used": THRESHOLD,
         "action": action,
         "top_factors": factors,
+        "plain_english_summary": explanation,
         "model_version": DEPLOY_CFG.get("deployed_model", "unknown"),
     }
     return record
