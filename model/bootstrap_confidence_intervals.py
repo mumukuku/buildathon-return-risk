@@ -84,7 +84,7 @@ def main():
     X_test = test[feat_meta["encoded_feature_columns"]]
     y_test = test[feat_meta["target"]].values
 
-    xgb = joblib.load("model/xgb_model.pkl")
+    xgb = joblib.load("model/deployed_model.pkl")  # calibrated -- must match the deployed threshold's scale
     proba = xgb.predict_proba(X_test)[:, 1]
 
     with open("model/deployment_config.json") as f:
