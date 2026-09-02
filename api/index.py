@@ -129,5 +129,4 @@ def metrics():
         "baseline_comparison": load("baseline_comparison.csv"),
         "calibration_fairness": load("calibration_fairness_report.json"),
         "business_impact": load("business_impact.json"),
-        "cost_sensitivity_grid": load("cost_sensitivity_grid.json"),
     })
