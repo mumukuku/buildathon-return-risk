@@ -1,0 +1,10 @@
+# Binary files -- NEVER let Git apply line-ending (CRLF/LF) conversion to
+# these. On Windows, Git's core.autocrlf=true (a common default) silently
+# rewrites \n -> \r\n in files it thinks are text, which corrupts binary
+# formats like pickled models. This caused an "input stream corrupted"
+# XGBoost error when loading deployed_model.pkl after a git checkout.
+*.pkl -text
+*.pyc -text
+*.png -text
+*.webp -text
+*.zip -text
