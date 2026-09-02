@@ -1,9 +1,9 @@
 {
   "deployed_model": "xgboost_isotonic_calibrated",
-  "deployed_threshold": 0.13,
+  "deployed_threshold": 0.09999999999999999,
   "deployed_threshold_basis": "capacity_constrained_optimal (max 20% flag rate)",
   "unconstrained_optimal_threshold": 0.02,
-  "unconstrained_optimal_flag_rate": 0.7747360187719984,
+  "unconstrained_optimal_flag_rate": 0.8627297614391866,
   "fp_review_cost_rs": 150.0,
   "fn_cost_basis": "order_value (value-weighted)",
   "max_flag_rate_assumption": 0.2,
@@ -13,6 +13,6 @@
     "at_or_above_threshold_below_high": "manual_review",
     "high_confidence": "auto_decline"
   },
-  "roc_auc": 0.8846228797044717,
-  "avg_precision": 0.7051763521704232
+  "roc_auc": 0.885162308869797,
+  "avg_precision": 0.7108912074814039
 }
