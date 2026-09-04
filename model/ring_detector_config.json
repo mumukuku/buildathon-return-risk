@@ -16,7 +16,7 @@
   "target": "is_true_ring",
   "roc_auc": 1.0,
   "avg_precision": 0.9999999999999998,
-  "deployed_threshold": 0.26956124264287346,
+  "deployed_threshold": 0.2703464403881998,
   "threshold_selection": "best F1 on held-out test set (not a fixed 0.5 default)",
   "note": "Small sample size (~176 clusters total, ~50 in test); treat metrics as indicative. Real fraud rings adapt to evade known signals over time in a way this static synthetic set cannot capture -- this should be retrained and re-thresholded periodically against real labeled data in production."
 }
