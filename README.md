@@ -67,7 +67,7 @@ it matters, rather than letting a strong number imply more than it should.
 | Deployed threshold | 0.27 (best-F1 on held-out set) |
 
 The perfect-looking ring-detector AUC is explained, not hidden, in
-[notebook 04](Notebook/4_abuse_ring_detector.ipynb) — it's a real artifact of a
+[notebook 04](notebook/4_abuse_ring_detector.ipynb) — it's a real artifact of a
 ~50-cluster test set and a generator-imposed size gap between rings (3–9 members)
 and benign groups (2–3 members), not a claim that real-world rings separate this
 cleanly.
@@ -85,14 +85,14 @@ metrics" should get an honest account of the process, not just the polished outp
    precision/recall just by checking one boolean. Caught before training, fixed by
    deliberately adding overlap (some families share a payment method too; rings
    vary which identifier they share, simulating operators with different caution
-   levels). See [notebook 01](Notebook/1_data_synthesis.ipynb).
+   levels). See [notebook 01](notebook/1_data_synthesis.ipynb).
 
 2. **A cost-blind "optimal" threshold wanted to flag 80% of all returns.**
    Minimizing pure dollar cost with no other constraint is mathematically
    correct and operationally absurd — no fraud-ops team can review 80% of
    returns. Fixed by adding an explicit review-capacity constraint (max 20% flag
    rate) and re-optimizing within it. See
-   [notebook 03](Notebook/3_model_training_evaluation.ipynb).
+   [notebook 03](notebook/3_model_training_evaluation.ipynb).
 
 3. **XGBoost's probabilities were badly overconfident.** `scale_pos_weight`
    (needed for class imbalance) gives good *ranking* but distorts raw
@@ -100,7 +100,7 @@ metrics" should get an honest account of the process, not just the polished outp
    in the worst bin. Caught by checking a calibration curve, not just AUC. Fixed
    with isotonic calibration on a proper held-out slice of the training window
    (never touching the test set). Calibration gap: 0.300 → 0.046. See
-   [notebook 03](Notebook/3_model_training_evaluation.ipynb).
+   [notebook 03](notebook/3_model_training_evaluation.ipynb).
 
 4. **A degenerate bootstrap confidence interval.** Bootstrapping the ring
    detector's ~50-point test set gave `[1.000, 1.000]` — suspiciously tight.
@@ -108,7 +108,7 @@ metrics" should get an honest account of the process, not just the polished outp
    error, no matter how many times you resample it; the interval was measuring
    the wrong question. Fixed with repeated random train/test splits instead,
    which actually vary which clusters the model has never seen. See
-   [notebook 04](Notebook/4_abuse_ring_detector.ipynb).
+   [notebook 04](notebook/4_abuse_ring_detector.ipynb).
 
 5. **We nearly shipped bug #2 and #3 in the wrong order.** While building
    notebook 03, we first computed the cost-optimal threshold on *raw* probabilities
