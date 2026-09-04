@@ -1,0 +1,673 @@
+{
+  "fp_costs": [
+    50,
+    100,
+    150,
+    200,
+    300,
+    500,
+    750,
+    1000
+  ],
+  "max_flag_rates": [
+    0.05,
+    0.1,
+    0.15,
+    0.2,
+    0.25,
+    0.3,
+    0.4,
+    0.5,
+    1.0
+  ],
+  "grid": [
+    {
+      "fp_cost": 50,
+      "max_flag_rate": 0.05,
+      "threshold": 0.8300000000000001,
+      "flag_rate": 0.04262807978099335,
+      "total_cost": 878126.09,
+      "precision": 0.908256880733945,
+      "recall": 0.31329113924050633
+    },
+    {
+      "fp_cost": 50,
+      "max_flag_rate": 0.1,
+      "threshold": 0.31,
+      "flag_rate": 0.08642940946421587,
+      "total_cost": 586932.51,
+      "precision": 0.8461538461538461,
+      "recall": 0.5917721518987342
+    },
+    {
+      "fp_cost": 50,
+      "max_flag_rate": 0.15,
+      "threshold": 0.18000000000000002,
+      "flag_rate": 0.12866640594446618,
+      "total_cost": 472124.39,
+      "precision": 0.6808510638297872,
+      "recall": 0.7088607594936709
+    },
+    {
+      "fp_cost": 50,
+      "max_flag_rate": 0.2,
+      "threshold": 0.13,
+      "flag_rate": 0.154477903793508,
+      "total_cost": 453155.67000000004,
+      "precision": 0.5848101265822785,
+      "recall": 0.7310126582278481
+    },
+    {
+      "fp_cost": 50,
+      "max_flag_rate": 0.25,
+      "threshold": 0.09,
+      "flag_rate": 0.20610089949159172,
+      "total_cost": 397212.73000000004,
+      "precision": 0.45540796963946867,
+      "recall": 0.759493670886076
+    },
+    {
+      "fp_cost": 50,
+      "max_flag_rate": 0.3,
+      "threshold": 0.09,
+      "flag_rate": 0.20610089949159172,
+      "total_cost": 397212.73000000004,
+      "precision": 0.45540796963946867,
+      "recall": 0.759493670886076
+    },
+    {
+      "fp_cost": 50,
+      "max_flag_rate": 0.4,
+      "threshold": 0.04,
+      "flag_rate": 0.3582323034806414,
+      "total_cost": 323370.91000000003,
+      "precision": 0.2903930131004367,
+      "recall": 0.8417721518987342
+    },
+    {
+      "fp_cost": 50,
+      "max_flag_rate": 0.5,
+      "threshold": 0.04,
+      "flag_rate": 0.3582323034806414,
+      "total_cost": 323370.91000000003,
+      "precision": 0.2903930131004367,
+      "recall": 0.8417721518987342
+    },
+    {
+      "fp_cost": 50,
+      "max_flag_rate": 1.0,
+      "threshold": 0.02,
+      "flag_rate": 0.7747360187719984,
+      "total_cost": 96287.62,
+      "precision": 0.15446744068652196,
+      "recall": 0.9683544303797469
+    },
+    {
+      "fp_cost": 100,
+      "max_flag_rate": 0.05,
+      "threshold": 0.8300000000000001,
+      "flag_rate": 0.04262807978099335,
+      "total_cost": 878626.09,
+      "precision": 0.908256880733945,
+      "recall": 0.31329113924050633
+    },
+    {
+      "fp_cost": 100,
+      "max_flag_rate": 0.1,
+      "threshold": 0.31,
+      "flag_rate": 0.08642940946421587,
+      "total_cost": 588632.51,
+      "precision": 0.8461538461538461,
+      "recall": 0.5917721518987342
+    },
+    {
+      "fp_cost": 100,
+      "max_flag_rate": 0.15,
+      "threshold": 0.18000000000000002,
+      "flag_rate": 0.12866640594446618,
+      "total_cost": 477374.39,
+      "precision": 0.6808510638297872,
+      "recall": 0.7088607594936709
+    },
+    {
+      "fp_cost": 100,
+      "max_flag_rate": 0.2,
+      "threshold": 0.13,
+      "flag_rate": 0.154477903793508,
+      "total_cost": 461355.67000000004,
+      "precision": 0.5848101265822785,
+      "recall": 0.7310126582278481
+    },
+    {
+      "fp_cost": 100,
+      "max_flag_rate": 0.25,
+      "threshold": 0.09,
+      "flag_rate": 0.20610089949159172,
+      "total_cost": 411562.73000000004,
+      "precision": 0.45540796963946867,
+      "recall": 0.759493670886076
+    },
+    {
+      "fp_cost": 100,
+      "max_flag_rate": 0.3,
+      "threshold": 0.09,
+      "flag_rate": 0.20610089949159172,
+      "total_cost": 411562.73000000004,
+      "precision": 0.45540796963946867,
+      "recall": 0.759493670886076
+    },
+    {
+      "fp_cost": 100,
+      "max_flag_rate": 0.4,
+      "threshold": 0.04,
+      "flag_rate": 0.3582323034806414,
+      "total_cost": 355870.91000000003,
+      "precision": 0.2903930131004367,
+      "recall": 0.8417721518987342
+    },
+    {
+      "fp_cost": 100,
+      "max_flag_rate": 0.5,
+      "threshold": 0.04,
+      "flag_rate": 0.3582323034806414,
+      "total_cost": 355870.91000000003,
+      "precision": 0.2903930131004367,
+      "recall": 0.8417721518987342
+    },
+    {
+      "fp_cost": 100,
+      "max_flag_rate": 1.0,
+      "threshold": 0.02,
+      "flag_rate": 0.7747360187719984,
+      "total_cost": 180037.62,
+      "precision": 0.15446744068652196,
+      "recall": 0.9683544303797469
+    },
+    {
+      "fp_cost": 150,
+      "max_flag_rate": 0.05,
+      "threshold": 0.8300000000000001,
+      "flag_rate": 0.04262807978099335,
+      "total_cost": 879126.09,
+      "precision": 0.908256880733945,
+      "recall": 0.31329113924050633
+    },
+    {
+      "fp_cost": 150,
+      "max_flag_rate": 0.1,
+      "threshold": 0.31,
+      "flag_rate": 0.08642940946421587,
+      "total_cost": 590332.51,
+      "precision": 0.8461538461538461,
+      "recall": 0.5917721518987342
+    },
+    {
+      "fp_cost": 150,
+      "max_flag_rate": 0.15,
+      "threshold": 0.18000000000000002,
+      "flag_rate": 0.12866640594446618,
+      "total_cost": 482624.39,
+      "precision": 0.6808510638297872,
+      "recall": 0.7088607594936709
+    },
+    {
+      "fp_cost": 150,
+      "max_flag_rate": 0.2,
+      "threshold": 0.13,
+      "flag_rate": 0.154477903793508,
+      "total_cost": 469555.67000000004,
+      "precision": 0.5848101265822785,
+      "recall": 0.7310126582278481
+    },
+    {
+      "fp_cost": 150,
+      "max_flag_rate": 0.25,
+      "threshold": 0.09,
+      "flag_rate": 0.20610089949159172,
+      "total_cost": 425912.73000000004,
+      "precision": 0.45540796963946867,
+      "recall": 0.759493670886076
+    },
+    {
+      "fp_cost": 150,
+      "max_flag_rate": 0.3,
+      "threshold": 0.09,
+      "flag_rate": 0.20610089949159172,
+      "total_cost": 425912.73000000004,
+      "precision": 0.45540796963946867,
+      "recall": 0.759493670886076
+    },
+    {
+      "fp_cost": 150,
+      "max_flag_rate": 0.4,
+      "threshold": 0.04,
+      "flag_rate": 0.3582323034806414,
+      "total_cost": 388370.91000000003,
+      "precision": 0.2903930131004367,
+      "recall": 0.8417721518987342
+    },
+    {
+      "fp_cost": 150,
+      "max_flag_rate": 0.5,
+      "threshold": 0.04,
+      "flag_rate": 0.3582323034806414,
+      "total_cost": 388370.91000000003,
+      "precision": 0.2903930131004367,
+      "recall": 0.8417721518987342
+    },
+    {
+      "fp_cost": 150,
+      "max_flag_rate": 1.0,
+      "threshold": 0.02,
+      "flag_rate": 0.7747360187719984,
+      "total_cost": 263787.62,
+      "precision": 0.15446744068652196,
+      "recall": 0.9683544303797469
+    },
+    {
+      "fp_cost": 200,
+      "max_flag_rate": 0.05,
+      "threshold": 0.8300000000000001,
+      "flag_rate": 0.04262807978099335,
+      "total_cost": 879626.09,
+      "precision": 0.908256880733945,
+      "recall": 0.31329113924050633
+    },
+    {
+      "fp_cost": 200,
+      "max_flag_rate": 0.1,
+      "threshold": 0.31,
+      "flag_rate": 0.08642940946421587,
+      "total_cost": 592032.51,
+      "precision": 0.8461538461538461,
+      "recall": 0.5917721518987342
+    },
+    {
+      "fp_cost": 200,
+      "max_flag_rate": 0.15,
+      "threshold": 0.18000000000000002,
+      "flag_rate": 0.12866640594446618,
+      "total_cost": 487874.39,
+      "precision": 0.6808510638297872,
+      "recall": 0.7088607594936709
+    },
+    {
+      "fp_cost": 200,
+      "max_flag_rate": 0.2,
+      "threshold": 0.13,
+      "flag_rate": 0.154477903793508,
+      "total_cost": 477755.67000000004,
+      "precision": 0.5848101265822785,
+      "recall": 0.7310126582278481
+    },
+    {
+      "fp_cost": 200,
+      "max_flag_rate": 0.25,
+      "threshold": 0.09,
+      "flag_rate": 0.20610089949159172,
+      "total_cost": 440262.73000000004,
+      "precision": 0.45540796963946867,
+      "recall": 0.759493670886076
+    },
+    {
+      "fp_cost": 200,
+      "max_flag_rate": 0.3,
+      "threshold": 0.09,
+      "flag_rate": 0.20610089949159172,
+      "total_cost": 440262.73000000004,
+      "precision": 0.45540796963946867,
+      "recall": 0.759493670886076
+    },
+    {
+      "fp_cost": 200,
+      "max_flag_rate": 0.4,
+      "threshold": 0.08,
+      "flag_rate": 0.3026984747751271,
+      "total_cost": 414669.56999999995,
+      "precision": 0.3333333333333333,
+      "recall": 0.8164556962025317
+    },
+    {
+      "fp_cost": 200,
+      "max_flag_rate": 0.5,
+      "threshold": 0.08,
+      "flag_rate": 0.3026984747751271,
+      "total_cost": 414669.56999999995,
+      "precision": 0.3333333333333333,
+      "recall": 0.8164556962025317
+    },
+    {
+      "fp_cost": 200,
+      "max_flag_rate": 1.0,
+      "threshold": 0.03,
+      "flag_rate": 0.5858427845131013,
+      "total_cost": 345867.83999999997,
+      "precision": 0.19692923898531375,
+      "recall": 0.9335443037974683
+    },
+    {
+      "fp_cost": 300,
+      "max_flag_rate": 0.05,
+      "threshold": 0.8300000000000001,
+      "flag_rate": 0.04262807978099335,
+      "total_cost": 880626.09,
+      "precision": 0.908256880733945,
+      "recall": 0.31329113924050633
+    },
+    {
+      "fp_cost": 300,
+      "max_flag_rate": 0.1,
+      "threshold": 0.31,
+      "flag_rate": 0.08642940946421587,
+      "total_cost": 595432.51,
+      "precision": 0.8461538461538461,
+      "recall": 0.5917721518987342
+    },
+    {
+      "fp_cost": 300,
+      "max_flag_rate": 0.15,
+      "threshold": 0.18000000000000002,
+      "flag_rate": 0.12866640594446618,
+      "total_cost": 498374.39,
+      "precision": 0.6808510638297872,
+      "recall": 0.7088607594936709
+    },
+    {
+      "fp_cost": 300,
+      "max_flag_rate": 0.2,
+      "threshold": 0.13,
+      "flag_rate": 0.154477903793508,
+      "total_cost": 494155.67000000004,
+      "precision": 0.5848101265822785,
+      "recall": 0.7310126582278481
+    },
+    {
+      "fp_cost": 300,
+      "max_flag_rate": 0.25,
+      "threshold": 0.09,
+      "flag_rate": 0.20610089949159172,
+      "total_cost": 468962.73000000004,
+      "precision": 0.45540796963946867,
+      "recall": 0.759493670886076
+    },
+    {
+      "fp_cost": 300,
+      "max_flag_rate": 0.3,
+      "threshold": 0.09,
+      "flag_rate": 0.20610089949159172,
+      "total_cost": 468962.73000000004,
+      "precision": 0.45540796963946867,
+      "recall": 0.759493670886076
+    },
+    {
+      "fp_cost": 300,
+      "max_flag_rate": 0.4,
+      "threshold": 0.08,
+      "flag_rate": 0.3026984747751271,
+      "total_cost": 466269.56999999995,
+      "precision": 0.3333333333333333,
+      "recall": 0.8164556962025317
+    },
+    {
+      "fp_cost": 300,
+      "max_flag_rate": 0.5,
+      "threshold": 0.08,
+      "flag_rate": 0.3026984747751271,
+      "total_cost": 466269.56999999995,
+      "precision": 0.3333333333333333,
+      "recall": 0.8164556962025317
+    },
+    {
+      "fp_cost": 300,
+      "max_flag_rate": 1.0,
+      "threshold": 0.03,
+      "flag_rate": 0.5858427845131013,
+      "total_cost": 466167.83999999997,
+      "precision": 0.19692923898531375,
+      "recall": 0.9335443037974683
+    },
+    {
+      "fp_cost": 500,
+      "max_flag_rate": 0.05,
+      "threshold": 0.8300000000000001,
+      "flag_rate": 0.04262807978099335,
+      "total_cost": 882626.09,
+      "precision": 0.908256880733945,
+      "recall": 0.31329113924050633
+    },
+    {
+      "fp_cost": 500,
+      "max_flag_rate": 0.1,
+      "threshold": 0.31,
+      "flag_rate": 0.08642940946421587,
+      "total_cost": 602232.51,
+      "precision": 0.8461538461538461,
+      "recall": 0.5917721518987342
+    },
+    {
+      "fp_cost": 500,
+      "max_flag_rate": 0.15,
+      "threshold": 0.18000000000000002,
+      "flag_rate": 0.12866640594446618,
+      "total_cost": 519374.39,
+      "precision": 0.6808510638297872,
+      "recall": 0.7088607594936709
+    },
+    {
+      "fp_cost": 500,
+      "max_flag_rate": 0.2,
+      "threshold": 0.18000000000000002,
+      "flag_rate": 0.12866640594446618,
+      "total_cost": 519374.39,
+      "precision": 0.6808510638297872,
+      "recall": 0.7088607594936709
+    },
+    {
+      "fp_cost": 500,
+      "max_flag_rate": 0.25,
+      "threshold": 0.18000000000000002,
+      "flag_rate": 0.12866640594446618,
+      "total_cost": 519374.39,
+      "precision": 0.6808510638297872,
+      "recall": 0.7088607594936709
+    },
+    {
+      "fp_cost": 500,
+      "max_flag_rate": 0.3,
+      "threshold": 0.18000000000000002,
+      "flag_rate": 0.12866640594446618,
+      "total_cost": 519374.39,
+      "precision": 0.6808510638297872,
+      "recall": 0.7088607594936709
+    },
+    {
+      "fp_cost": 500,
+      "max_flag_rate": 0.4,
+      "threshold": 0.18000000000000002,
+      "flag_rate": 0.12866640594446618,
+      "total_cost": 519374.39,
+      "precision": 0.6808510638297872,
+      "recall": 0.7088607594936709
+    },
+    {
+      "fp_cost": 500,
+      "max_flag_rate": 0.5,
+      "threshold": 0.18000000000000002,
+      "flag_rate": 0.12866640594446618,
+      "total_cost": 519374.39,
+      "precision": 0.6808510638297872,
+      "recall": 0.7088607594936709
+    },
+    {
+      "fp_cost": 500,
+      "max_flag_rate": 1.0,
+      "threshold": 0.18000000000000002,
+      "flag_rate": 0.12866640594446618,
+      "total_cost": 519374.39,
+      "precision": 0.6808510638297872,
+      "recall": 0.7088607594936709
+    },
+    {
+      "fp_cost": 750,
+      "max_flag_rate": 0.05,
+      "threshold": 0.8300000000000001,
+      "flag_rate": 0.04262807978099335,
+      "total_cost": 885126.09,
+      "precision": 0.908256880733945,
+      "recall": 0.31329113924050633
+    },
+    {
+      "fp_cost": 750,
+      "max_flag_rate": 0.1,
+      "threshold": 0.31,
+      "flag_rate": 0.08642940946421587,
+      "total_cost": 610732.51,
+      "precision": 0.8461538461538461,
+      "recall": 0.5917721518987342
+    },
+    {
+      "fp_cost": 750,
+      "max_flag_rate": 0.15,
+      "threshold": 0.18000000000000002,
+      "flag_rate": 0.12866640594446618,
+      "total_cost": 545624.39,
+      "precision": 0.6808510638297872,
+      "recall": 0.7088607594936709
+    },
+    {
+      "fp_cost": 750,
+      "max_flag_rate": 0.2,
+      "threshold": 0.18000000000000002,
+      "flag_rate": 0.12866640594446618,
+      "total_cost": 545624.39,
+      "precision": 0.6808510638297872,
+      "recall": 0.7088607594936709
+    },
+    {
+      "fp_cost": 750,
+      "max_flag_rate": 0.25,
+      "threshold": 0.18000000000000002,
+      "flag_rate": 0.12866640594446618,
+      "total_cost": 545624.39,
+      "precision": 0.6808510638297872,
+      "recall": 0.7088607594936709
+    },
+    {
+      "fp_cost": 750,
+      "max_flag_rate": 0.3,
+      "threshold": 0.18000000000000002,
+      "flag_rate": 0.12866640594446618,
+      "total_cost": 545624.39,
+      "precision": 0.6808510638297872,
+      "recall": 0.7088607594936709
+    },
+    {
+      "fp_cost": 750,
+      "max_flag_rate": 0.4,
+      "threshold": 0.18000000000000002,
+      "flag_rate": 0.12866640594446618,
+      "total_cost": 545624.39,
+      "precision": 0.6808510638297872,
+      "recall": 0.7088607594936709
+    },
+    {
+      "fp_cost": 750,
+      "max_flag_rate": 0.5,
+      "threshold": 0.18000000000000002,
+      "flag_rate": 0.12866640594446618,
+      "total_cost": 545624.39,
+      "precision": 0.6808510638297872,
+      "recall": 0.7088607594936709
+    },
+    {
+      "fp_cost": 750,
+      "max_flag_rate": 1.0,
+      "threshold": 0.18000000000000002,
+      "flag_rate": 0.12866640594446618,
+      "total_cost": 545624.39,
+      "precision": 0.6808510638297872,
+      "recall": 0.7088607594936709
+    },
+    {
+      "fp_cost": 1000,
+      "max_flag_rate": 0.05,
+      "threshold": 0.8300000000000001,
+      "flag_rate": 0.04262807978099335,
+      "total_cost": 887626.09,
+      "precision": 0.908256880733945,
+      "recall": 0.31329113924050633
+    },
+    {
+      "fp_cost": 1000,
+      "max_flag_rate": 0.1,
+      "threshold": 0.31,
+      "flag_rate": 0.08642940946421587,
+      "total_cost": 619232.51,
+      "precision": 0.8461538461538461,
+      "recall": 0.5917721518987342
+    },
+    {
+      "fp_cost": 1000,
+      "max_flag_rate": 0.15,
+      "threshold": 0.18000000000000002,
+      "flag_rate": 0.12866640594446618,
+      "total_cost": 571874.39,
+      "precision": 0.6808510638297872,
+      "recall": 0.7088607594936709
+    },
+    {
+      "fp_cost": 1000,
+      "max_flag_rate": 0.2,
+      "threshold": 0.18000000000000002,
+      "flag_rate": 0.12866640594446618,
+      "total_cost": 571874.39,
+      "precision": 0.6808510638297872,
+      "recall": 0.7088607594936709
+    },
+    {
+      "fp_cost": 1000,
+      "max_flag_rate": 0.25,
+      "threshold": 0.18000000000000002,
+      "flag_rate": 0.12866640594446618,
+      "total_cost": 571874.39,
+      "precision": 0.6808510638297872,
+      "recall": 0.7088607594936709
+    },
+    {
+      "fp_cost": 1000,
+      "max_flag_rate": 0.3,
+      "threshold": 0.18000000000000002,
+      "flag_rate": 0.12866640594446618,
+      "total_cost": 571874.39,
+      "precision": 0.6808510638297872,
+      "recall": 0.7088607594936709
+    },
+    {
+      "fp_cost": 1000,
+      "max_flag_rate": 0.4,
+      "threshold": 0.18000000000000002,
+      "flag_rate": 0.12866640594446618,
+      "total_cost": 571874.39,
+      "precision": 0.6808510638297872,
+      "recall": 0.7088607594936709
+    },
+    {
+      "fp_cost": 1000,
+      "max_flag_rate": 0.5,
+      "threshold": 0.18000000000000002,
+      "flag_rate": 0.12866640594446618,
+      "total_cost": 571874.39,
+      "precision": 0.6808510638297872,
+      "recall": 0.7088607594936709
+    },
+    {
+      "fp_cost": 1000,
+      "max_flag_rate": 1.0,
+      "threshold": 0.18000000000000002,
+      "flag_rate": 0.12866640594446618,
+      "total_cost": 571874.39,
+      "precision": 0.6808510638297872,
+      "recall": 0.7088607594936709
+    }
+  ]
+}
