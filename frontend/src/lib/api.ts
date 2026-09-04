@@ -35,6 +35,14 @@ export interface ScoreResult {
   model_version: string;
 }
 
+export interface ClusterMember {
+  customer_id: string;
+  account_age_days: number;
+  return_rate: number;
+  abusive_return_rate: number;
+  total_orders: number;
+}
+
 export interface ClusterInput {
   size: number;
   shares_device: number;
@@ -50,6 +58,7 @@ export interface ClusterInput {
   avg_total_orders: number;
   cluster_id?: number;
   is_true_ring?: number;
+  members?: ClusterMember[];
 }
 
 export interface RingFactor {

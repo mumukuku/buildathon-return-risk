@@ -1,0 +1,4743 @@
+{
+  "4": [
+    {
+      "customer_id": "CUST100957",
+      "account_age_days": 373,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 2
+    },
+    {
+      "customer_id": "CUST100004",
+      "account_age_days": 894,
+      "return_rate": 0.3,
+      "abusive_return_rate": 0.0,
+      "total_orders": 10
+    },
+    {
+      "customer_id": "CUST100694",
+      "account_age_days": 632,
+      "return_rate": 0.2,
+      "abusive_return_rate": 1.0,
+      "total_orders": 5
+    }
+  ],
+  "5": [
+    {
+      "customer_id": "CUST101129",
+      "account_age_days": 660,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 3
+    },
+    {
+      "customer_id": "CUST102358",
+      "account_age_days": 882,
+      "return_rate": 0.333,
+      "abusive_return_rate": 0.0,
+      "total_orders": 12
+    },
+    {
+      "customer_id": "CUST105930",
+      "account_age_days": 232,
+      "return_rate": 0.667,
+      "abusive_return_rate": 0.0,
+      "total_orders": 3
+    },
+    {
+      "customer_id": "CUST101517",
+      "account_age_days": 623,
+      "return_rate": 0.167,
+      "abusive_return_rate": 0.0,
+      "total_orders": 6
+    },
+    {
+      "customer_id": "CUST105747",
+      "account_age_days": 1162,
+      "return_rate": 0.222,
+      "abusive_return_rate": 0.5,
+      "total_orders": 9
+    },
+    {
+      "customer_id": "CUST104172",
+      "account_age_days": 1337,
+      "return_rate": 0.25,
+      "abusive_return_rate": 0.25,
+      "total_orders": 16
+    },
+    {
+      "customer_id": "CUST100005",
+      "account_age_days": 855,
+      "return_rate": 0.8,
+      "abusive_return_rate": 0.0,
+      "total_orders": 5
+    },
+    {
+      "customer_id": "CUST100387",
+      "account_age_days": 731,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 8
+    },
+    {
+      "customer_id": "CUST100913",
+      "account_age_days": 710,
+      "return_rate": 0.167,
+      "abusive_return_rate": 0.5,
+      "total_orders": 12
+    }
+  ],
+  "21": [
+    {
+      "customer_id": "CUST100021",
+      "account_age_days": 1141,
+      "return_rate": 0.077,
+      "abusive_return_rate": 0.0,
+      "total_orders": 13
+    },
+    {
+      "customer_id": "CUST101074",
+      "account_age_days": 1419,
+      "return_rate": 0.308,
+      "abusive_return_rate": 0.0,
+      "total_orders": 13
+    },
+    {
+      "customer_id": "CUST101385",
+      "account_age_days": 1339,
+      "return_rate": 0.167,
+      "abusive_return_rate": 0.0,
+      "total_orders": 12
+    }
+  ],
+  "22": [
+    {
+      "customer_id": "CUST103045",
+      "account_age_days": 695,
+      "return_rate": 0.125,
+      "abusive_return_rate": 1.0,
+      "total_orders": 8
+    },
+    {
+      "customer_id": "CUST101501",
+      "account_age_days": 30,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 1
+    },
+    {
+      "customer_id": "CUST105045",
+      "account_age_days": 1451,
+      "return_rate": 0.429,
+      "abusive_return_rate": 0.222,
+      "total_orders": 21
+    },
+    {
+      "customer_id": "CUST100022",
+      "account_age_days": 1456,
+      "return_rate": 0.364,
+      "abusive_return_rate": 0.25,
+      "total_orders": 11
+    },
+    {
+      "customer_id": "CUST105781",
+      "account_age_days": 1176,
+      "return_rate": 0.4,
+      "abusive_return_rate": 0.25,
+      "total_orders": 10
+    },
+    {
+      "customer_id": "CUST102793",
+      "account_age_days": 587,
+      "return_rate": 0.429,
+      "abusive_return_rate": 0.333,
+      "total_orders": 7
+    }
+  ],
+  "28": [
+    {
+      "customer_id": "CUST100028",
+      "account_age_days": 813,
+      "return_rate": 0.222,
+      "abusive_return_rate": 0.0,
+      "total_orders": 9
+    },
+    {
+      "customer_id": "CUST103004",
+      "account_age_days": 860,
+      "return_rate": 0.25,
+      "abusive_return_rate": 0.0,
+      "total_orders": 12
+    },
+    {
+      "customer_id": "CUST101625",
+      "account_age_days": 510,
+      "return_rate": 0.111,
+      "abusive_return_rate": 0.0,
+      "total_orders": 9
+    }
+  ],
+  "31": [
+    {
+      "customer_id": "CUST101270",
+      "account_age_days": 680,
+      "return_rate": 0.2,
+      "abusive_return_rate": 0.0,
+      "total_orders": 5
+    },
+    {
+      "customer_id": "CUST102565",
+      "account_age_days": 241,
+      "return_rate": 1.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 1
+    },
+    {
+      "customer_id": "CUST105306",
+      "account_age_days": 623,
+      "return_rate": 0.167,
+      "abusive_return_rate": 0.5,
+      "total_orders": 12
+    },
+    {
+      "customer_id": "CUST101988",
+      "account_age_days": 1161,
+      "return_rate": 0.286,
+      "abusive_return_rate": 0.5,
+      "total_orders": 14
+    },
+    {
+      "customer_id": "CUST100031",
+      "account_age_days": 92,
+      "return_rate": 1.0,
+      "abusive_return_rate": 0.5,
+      "total_orders": 2
+    }
+  ],
+  "44": [
+    {
+      "customer_id": "CUST100044",
+      "account_age_days": 1100,
+      "return_rate": 0.4,
+      "abusive_return_rate": 0.0,
+      "total_orders": 10
+    },
+    {
+      "customer_id": "CUST102610",
+      "account_age_days": 1203,
+      "return_rate": 0.25,
+      "abusive_return_rate": 0.0,
+      "total_orders": 12
+    },
+    {
+      "customer_id": "CUST104227",
+      "account_age_days": 1092,
+      "return_rate": 0.111,
+      "abusive_return_rate": 0.0,
+      "total_orders": 9
+    }
+  ],
+  "79": [
+    {
+      "customer_id": "CUST100079",
+      "account_age_days": 641,
+      "return_rate": 1.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 2
+    },
+    {
+      "customer_id": "CUST100386",
+      "account_age_days": 806,
+      "return_rate": 0.571,
+      "abusive_return_rate": 0.0,
+      "total_orders": 7
+    }
+  ],
+  "99": [
+    {
+      "customer_id": "CUST102621",
+      "account_age_days": 583,
+      "return_rate": 0.5,
+      "abusive_return_rate": 0.0,
+      "total_orders": 6
+    },
+    {
+      "customer_id": "CUST102440",
+      "account_age_days": 381,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 6
+    },
+    {
+      "customer_id": "CUST100710",
+      "account_age_days": 1326,
+      "return_rate": 0.333,
+      "abusive_return_rate": 0.333,
+      "total_orders": 9
+    },
+    {
+      "customer_id": "CUST105717",
+      "account_age_days": 383,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 3
+    },
+    {
+      "customer_id": "CUST100099",
+      "account_age_days": 755,
+      "return_rate": 0.2,
+      "abusive_return_rate": 0.333,
+      "total_orders": 15
+    },
+    {
+      "customer_id": "CUST100296",
+      "account_age_days": 1101,
+      "return_rate": 0.5,
+      "abusive_return_rate": 0.0,
+      "total_orders": 12
+    },
+    {
+      "customer_id": "CUST101108",
+      "account_age_days": 1205,
+      "return_rate": 0.4,
+      "abusive_return_rate": 0.25,
+      "total_orders": 10
+    },
+    {
+      "customer_id": "CUST103564",
+      "account_age_days": 627,
+      "return_rate": 0.455,
+      "abusive_return_rate": 0.2,
+      "total_orders": 11
+    },
+    {
+      "customer_id": "CUST102599",
+      "account_age_days": 966,
+      "return_rate": 0.222,
+      "abusive_return_rate": 0.5,
+      "total_orders": 9
+    }
+  ],
+  "103": [
+    {
+      "customer_id": "CUST103595",
+      "account_age_days": 1314,
+      "return_rate": 0.286,
+      "abusive_return_rate": 0.0,
+      "total_orders": 14
+    },
+    {
+      "customer_id": "CUST100613",
+      "account_age_days": 1041,
+      "return_rate": 0.091,
+      "abusive_return_rate": 0.0,
+      "total_orders": 11
+    },
+    {
+      "customer_id": "CUST100784",
+      "account_age_days": 1478,
+      "return_rate": 0.2,
+      "abusive_return_rate": 0.0,
+      "total_orders": 10
+    },
+    {
+      "customer_id": "CUST102891",
+      "account_age_days": 982,
+      "return_rate": 0.312,
+      "abusive_return_rate": 0.2,
+      "total_orders": 16
+    },
+    {
+      "customer_id": "CUST103840",
+      "account_age_days": 860,
+      "return_rate": 0.111,
+      "abusive_return_rate": 0.0,
+      "total_orders": 9
+    },
+    {
+      "customer_id": "CUST100103",
+      "account_age_days": 819,
+      "return_rate": 0.091,
+      "abusive_return_rate": 1.0,
+      "total_orders": 11
+    },
+    {
+      "customer_id": "CUST104028",
+      "account_age_days": 337,
+      "return_rate": 0.25,
+      "abusive_return_rate": 0.0,
+      "total_orders": 4
+    },
+    {
+      "customer_id": "CUST101374",
+      "account_age_days": 1205,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 13
+    },
+    {
+      "customer_id": "CUST105160",
+      "account_age_days": 685,
+      "return_rate": 0.286,
+      "abusive_return_rate": 0.0,
+      "total_orders": 7
+    },
+    {
+      "customer_id": "CUST103866",
+      "account_age_days": 1194,
+      "return_rate": 0.167,
+      "abusive_return_rate": 0.0,
+      "total_orders": 12
+    },
+    {
+      "customer_id": "CUST101953",
+      "account_age_days": 1231,
+      "return_rate": 0.444,
+      "abusive_return_rate": 0.25,
+      "total_orders": 9
+    },
+    {
+      "customer_id": "CUST104546",
+      "account_age_days": 1075,
+      "return_rate": 0.286,
+      "abusive_return_rate": 0.0,
+      "total_orders": 14
+    },
+    {
+      "customer_id": "CUST102615",
+      "account_age_days": 1181,
+      "return_rate": 0.111,
+      "abusive_return_rate": 0.0,
+      "total_orders": 9
+    }
+  ],
+  "116": [
+    {
+      "customer_id": "CUST104442",
+      "account_age_days": 1423,
+      "return_rate": 0.2,
+      "abusive_return_rate": 0.0,
+      "total_orders": 15
+    },
+    {
+      "customer_id": "CUST100116",
+      "account_age_days": 359,
+      "return_rate": 0.25,
+      "abusive_return_rate": 0.0,
+      "total_orders": 4
+    },
+    {
+      "customer_id": "CUST103230",
+      "account_age_days": 1312,
+      "return_rate": 0.071,
+      "abusive_return_rate": 0.0,
+      "total_orders": 14
+    }
+  ],
+  "119": [
+    {
+      "customer_id": "CUST100119",
+      "account_age_days": 1330,
+      "return_rate": 0.182,
+      "abusive_return_rate": 0.0,
+      "total_orders": 11
+    },
+    {
+      "customer_id": "CUST100554",
+      "account_age_days": 987,
+      "return_rate": 0.308,
+      "abusive_return_rate": 0.0,
+      "total_orders": 13
+    },
+    {
+      "customer_id": "CUST104848",
+      "account_age_days": 225,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 3
+    }
+  ],
+  "125": [
+    {
+      "customer_id": "CUST105666",
+      "account_age_days": 860,
+      "return_rate": 0.231,
+      "abusive_return_rate": 0.0,
+      "total_orders": 13
+    },
+    {
+      "customer_id": "CUST100125",
+      "account_age_days": 235,
+      "return_rate": 0.25,
+      "abusive_return_rate": 0.0,
+      "total_orders": 4
+    }
+  ],
+  "136": [
+    {
+      "customer_id": "CUST101712",
+      "account_age_days": 1194,
+      "return_rate": 0.235,
+      "abusive_return_rate": 0.0,
+      "total_orders": 17
+    },
+    {
+      "customer_id": "CUST101439",
+      "account_age_days": 676,
+      "return_rate": 0.333,
+      "abusive_return_rate": 1.0,
+      "total_orders": 3
+    },
+    {
+      "customer_id": "CUST104270",
+      "account_age_days": 103,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 1
+    },
+    {
+      "customer_id": "CUST101187",
+      "account_age_days": 1206,
+      "return_rate": 0.263,
+      "abusive_return_rate": 0.2,
+      "total_orders": 19
+    },
+    {
+      "customer_id": "CUST100543",
+      "account_age_days": 335,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 2
+    },
+    {
+      "customer_id": "CUST100136",
+      "account_age_days": 40,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 1
+    },
+    {
+      "customer_id": "CUST103232",
+      "account_age_days": 513,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 3
+    }
+  ],
+  "147": [
+    {
+      "customer_id": "CUST100147",
+      "account_age_days": 278,
+      "return_rate": 1.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 1
+    },
+    {
+      "customer_id": "CUST105475",
+      "account_age_days": 506,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 5
+    },
+    {
+      "customer_id": "CUST101794",
+      "account_age_days": 879,
+      "return_rate": 0.364,
+      "abusive_return_rate": 1.0,
+      "total_orders": 11
+    }
+  ],
+  "161": [
+    {
+      "customer_id": "CUST100368",
+      "account_age_days": 1029,
+      "return_rate": 0.2,
+      "abusive_return_rate": 0.0,
+      "total_orders": 10
+    },
+    {
+      "customer_id": "CUST100161",
+      "account_age_days": 291,
+      "return_rate": 0.167,
+      "abusive_return_rate": 1.0,
+      "total_orders": 6
+    },
+    {
+      "customer_id": "CUST103198",
+      "account_age_days": 607,
+      "return_rate": 0.111,
+      "abusive_return_rate": 0.0,
+      "total_orders": 9
+    }
+  ],
+  "169": [
+    {
+      "customer_id": "CUST101955",
+      "account_age_days": 299,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 1
+    },
+    {
+      "customer_id": "CUST104595",
+      "account_age_days": 420,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 6
+    },
+    {
+      "customer_id": "CUST101419",
+      "account_age_days": 240,
+      "return_rate": 0.5,
+      "abusive_return_rate": 1.0,
+      "total_orders": 2
+    },
+    {
+      "customer_id": "CUST100169",
+      "account_age_days": 148,
+      "return_rate": 0.5,
+      "abusive_return_rate": 0.0,
+      "total_orders": 2
+    },
+    {
+      "customer_id": "CUST100526",
+      "account_age_days": 678,
+      "return_rate": 0.429,
+      "abusive_return_rate": 0.0,
+      "total_orders": 7
+    },
+    {
+      "customer_id": "CUST104451",
+      "account_age_days": 210,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 4
+    },
+    {
+      "customer_id": "CUST101831",
+      "account_age_days": 1329,
+      "return_rate": 0.167,
+      "abusive_return_rate": 0.0,
+      "total_orders": 6
+    },
+    {
+      "customer_id": "CUST101766",
+      "account_age_days": 144,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 2
+    },
+    {
+      "customer_id": "CUST101193",
+      "account_age_days": 370,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 2
+    },
+    {
+      "customer_id": "CUST104214",
+      "account_age_days": 1428,
+      "return_rate": 0.143,
+      "abusive_return_rate": 0.0,
+      "total_orders": 21
+    },
+    {
+      "customer_id": "CUST101971",
+      "account_age_days": 945,
+      "return_rate": 0.438,
+      "abusive_return_rate": 0.143,
+      "total_orders": 16
+    },
+    {
+      "customer_id": "CUST104120",
+      "account_age_days": 151,
+      "return_rate": 1.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 1
+    },
+    {
+      "customer_id": "CUST104363",
+      "account_age_days": 1134,
+      "return_rate": 0.1,
+      "abusive_return_rate": 1.0,
+      "total_orders": 10
+    },
+    {
+      "customer_id": "CUST105992",
+      "account_age_days": 186,
+      "return_rate": 0.25,
+      "abusive_return_rate": 0.0,
+      "total_orders": 4
+    },
+    {
+      "customer_id": "CUST103976",
+      "account_age_days": 1269,
+      "return_rate": 0.188,
+      "abusive_return_rate": 0.0,
+      "total_orders": 16
+    },
+    {
+      "customer_id": "CUST102254",
+      "account_age_days": 1203,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 6
+    },
+    {
+      "customer_id": "CUST103100",
+      "account_age_days": 478,
+      "return_rate": 0.667,
+      "abusive_return_rate": 0.5,
+      "total_orders": 3
+    },
+    {
+      "customer_id": "CUST102998",
+      "account_age_days": 707,
+      "return_rate": 0.111,
+      "abusive_return_rate": 0.0,
+      "total_orders": 9
+    }
+  ],
+  "177": [
+    {
+      "customer_id": "CUST100598",
+      "account_age_days": 654,
+      "return_rate": 0.333,
+      "abusive_return_rate": 0.0,
+      "total_orders": 3
+    },
+    {
+      "customer_id": "CUST102823",
+      "account_age_days": 1107,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 8
+    },
+    {
+      "customer_id": "CUST103712",
+      "account_age_days": 475,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 2
+    },
+    {
+      "customer_id": "CUST103990",
+      "account_age_days": 183,
+      "return_rate": 0.5,
+      "abusive_return_rate": 0.0,
+      "total_orders": 2
+    },
+    {
+      "customer_id": "CUST103988",
+      "account_age_days": 788,
+      "return_rate": 0.143,
+      "abusive_return_rate": 0.0,
+      "total_orders": 7
+    },
+    {
+      "customer_id": "CUST105748",
+      "account_age_days": 583,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 5
+    },
+    {
+      "customer_id": "CUST100177",
+      "account_age_days": 526,
+      "return_rate": 0.286,
+      "abusive_return_rate": 0.5,
+      "total_orders": 7
+    },
+    {
+      "customer_id": "CUST101861",
+      "account_age_days": 366,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 1
+    }
+  ],
+  "179": [
+    {
+      "customer_id": "CUST100179",
+      "account_age_days": 1095,
+      "return_rate": 0.167,
+      "abusive_return_rate": 0.0,
+      "total_orders": 12
+    },
+    {
+      "customer_id": "CUST103697",
+      "account_age_days": 326,
+      "return_rate": 0.143,
+      "abusive_return_rate": 0.0,
+      "total_orders": 7
+    }
+  ],
+  "200": [
+    {
+      "customer_id": "CUST100200",
+      "account_age_days": 805,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 5
+    },
+    {
+      "customer_id": "CUST104140",
+      "account_age_days": 47,
+      "return_rate": 0.333,
+      "abusive_return_rate": 0.0,
+      "total_orders": 3
+    }
+  ],
+  "201": [
+    {
+      "customer_id": "CUST101872",
+      "account_age_days": 34,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 2
+    },
+    {
+      "customer_id": "CUST102261",
+      "account_age_days": 678,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 8
+    },
+    {
+      "customer_id": "CUST103510",
+      "account_age_days": 73,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 3
+    },
+    {
+      "customer_id": "CUST100201",
+      "account_age_days": 831,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 1
+    },
+    {
+      "customer_id": "CUST102056",
+      "account_age_days": 999,
+      "return_rate": 0.059,
+      "abusive_return_rate": 0.0,
+      "total_orders": 17
+    }
+  ],
+  "222": [
+    {
+      "customer_id": "CUST104281",
+      "account_age_days": 427,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 4
+    },
+    {
+      "customer_id": "CUST100222",
+      "account_age_days": 776,
+      "return_rate": 0.125,
+      "abusive_return_rate": 0.0,
+      "total_orders": 8
+    }
+  ],
+  "223": [
+    {
+      "customer_id": "CUST100223",
+      "account_age_days": 577,
+      "return_rate": 0.1,
+      "abusive_return_rate": 1.0,
+      "total_orders": 10
+    },
+    {
+      "customer_id": "CUST102710",
+      "account_age_days": 1337,
+      "return_rate": 0.231,
+      "abusive_return_rate": 0.667,
+      "total_orders": 13
+    },
+    {
+      "customer_id": "CUST103160",
+      "account_age_days": 216,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 1
+    },
+    {
+      "customer_id": "CUST103093",
+      "account_age_days": 800,
+      "return_rate": 0.286,
+      "abusive_return_rate": 0.5,
+      "total_orders": 7
+    },
+    {
+      "customer_id": "CUST103884",
+      "account_age_days": 112,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 1
+    },
+    {
+      "customer_id": "CUST105546",
+      "account_age_days": 743,
+      "return_rate": 0.231,
+      "abusive_return_rate": 0.333,
+      "total_orders": 13
+    },
+    {
+      "customer_id": "CUST100812",
+      "account_age_days": 955,
+      "return_rate": 0.625,
+      "abusive_return_rate": 0.4,
+      "total_orders": 8
+    }
+  ],
+  "232": [
+    {
+      "customer_id": "CUST101377",
+      "account_age_days": 839,
+      "return_rate": 0.273,
+      "abusive_return_rate": 0.0,
+      "total_orders": 11
+    },
+    {
+      "customer_id": "CUST100232",
+      "account_age_days": 711,
+      "return_rate": 0.333,
+      "abusive_return_rate": 0.0,
+      "total_orders": 6
+    },
+    {
+      "customer_id": "CUST102896",
+      "account_age_days": 896,
+      "return_rate": 0.25,
+      "abusive_return_rate": 0.0,
+      "total_orders": 8
+    },
+    {
+      "customer_id": "CUST104908",
+      "account_age_days": 758,
+      "return_rate": 0.2,
+      "abusive_return_rate": 0.0,
+      "total_orders": 5
+    },
+    {
+      "customer_id": "CUST104356",
+      "account_age_days": 1123,
+      "return_rate": 0.182,
+      "abusive_return_rate": 0.0,
+      "total_orders": 11
+    }
+  ],
+  "233": [
+    {
+      "customer_id": "CUST100233",
+      "account_age_days": 583,
+      "return_rate": 0.2,
+      "abusive_return_rate": 0.0,
+      "total_orders": 5
+    },
+    {
+      "customer_id": "CUST102611",
+      "account_age_days": 681,
+      "return_rate": 0.4,
+      "abusive_return_rate": 0.0,
+      "total_orders": 5
+    }
+  ],
+  "234": [
+    {
+      "customer_id": "CUST104230",
+      "account_age_days": 1110,
+      "return_rate": 0.176,
+      "abusive_return_rate": 0.0,
+      "total_orders": 17
+    },
+    {
+      "customer_id": "CUST103760",
+      "account_age_days": 194,
+      "return_rate": 1.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 1
+    },
+    {
+      "customer_id": "CUST105973",
+      "account_age_days": 425,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 4
+    },
+    {
+      "customer_id": "CUST104400",
+      "account_age_days": 492,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 10
+    },
+    {
+      "customer_id": "CUST100234",
+      "account_age_days": 1002,
+      "return_rate": 0.5,
+      "abusive_return_rate": 1.0,
+      "total_orders": 12
+    }
+  ],
+  "248": [
+    {
+      "customer_id": "CUST100250",
+      "account_age_days": 375,
+      "return_rate": 0.333,
+      "abusive_return_rate": 0.0,
+      "total_orders": 6
+    },
+    {
+      "customer_id": "CUST100248",
+      "account_age_days": 1481,
+      "return_rate": 0.188,
+      "abusive_return_rate": 0.0,
+      "total_orders": 16
+    }
+  ],
+  "267": [
+    {
+      "customer_id": "CUST103285",
+      "account_age_days": 494,
+      "return_rate": 0.111,
+      "abusive_return_rate": 0.0,
+      "total_orders": 9
+    },
+    {
+      "customer_id": "CUST104911",
+      "account_age_days": 123,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 1
+    },
+    {
+      "customer_id": "CUST100268",
+      "account_age_days": 416,
+      "return_rate": 0.667,
+      "abusive_return_rate": 0.0,
+      "total_orders": 3
+    }
+  ],
+  "275": [
+    {
+      "customer_id": "CUST100636",
+      "account_age_days": 1321,
+      "return_rate": 0.333,
+      "abusive_return_rate": 0.0,
+      "total_orders": 15
+    },
+    {
+      "customer_id": "CUST104474",
+      "account_age_days": 486,
+      "return_rate": 0.3,
+      "abusive_return_rate": 0.0,
+      "total_orders": 10
+    },
+    {
+      "customer_id": "CUST100276",
+      "account_age_days": 1302,
+      "return_rate": 0.429,
+      "abusive_return_rate": 0.0,
+      "total_orders": 14
+    }
+  ],
+  "284": [
+    {
+      "customer_id": "CUST100496",
+      "account_age_days": 534,
+      "return_rate": 0.25,
+      "abusive_return_rate": 0.0,
+      "total_orders": 4
+    },
+    {
+      "customer_id": "CUST100285",
+      "account_age_days": 148,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 1
+    },
+    {
+      "customer_id": "CUST105461",
+      "account_age_days": 338,
+      "return_rate": 0.286,
+      "abusive_return_rate": 0.0,
+      "total_orders": 7
+    }
+  ],
+  "299": [
+    {
+      "customer_id": "CUST100301",
+      "account_age_days": 1208,
+      "return_rate": 0.154,
+      "abusive_return_rate": 0.0,
+      "total_orders": 13
+    },
+    {
+      "customer_id": "CUST103573",
+      "account_age_days": 1041,
+      "return_rate": 0.214,
+      "abusive_return_rate": 0.0,
+      "total_orders": 14
+    }
+  ],
+  "306": [
+    {
+      "customer_id": "CUST100308",
+      "account_age_days": 1266,
+      "return_rate": 0.111,
+      "abusive_return_rate": 0.0,
+      "total_orders": 9
+    },
+    {
+      "customer_id": "CUST105324",
+      "account_age_days": 1386,
+      "return_rate": 0.176,
+      "abusive_return_rate": 0.0,
+      "total_orders": 17
+    },
+    {
+      "customer_id": "CUST104093",
+      "account_age_days": 1074,
+      "return_rate": 0.182,
+      "abusive_return_rate": 0.0,
+      "total_orders": 11
+    }
+  ],
+  "329": [
+    {
+      "customer_id": "CUST100331",
+      "account_age_days": 980,
+      "return_rate": 0.2,
+      "abusive_return_rate": 0.0,
+      "total_orders": 10
+    },
+    {
+      "customer_id": "CUST102538",
+      "account_age_days": 1023,
+      "return_rate": 0.133,
+      "abusive_return_rate": 0.5,
+      "total_orders": 15
+    },
+    {
+      "customer_id": "CUST103213",
+      "account_age_days": 1169,
+      "return_rate": 0.4,
+      "abusive_return_rate": 0.0,
+      "total_orders": 10
+    }
+  ],
+  "339": [
+    {
+      "customer_id": "CUST102948",
+      "account_age_days": 568,
+      "return_rate": 0.286,
+      "abusive_return_rate": 0.0,
+      "total_orders": 7
+    },
+    {
+      "customer_id": "CUST100385",
+      "account_age_days": 296,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 5
+    },
+    {
+      "customer_id": "CUST105433",
+      "account_age_days": 296,
+      "return_rate": 0.2,
+      "abusive_return_rate": 0.0,
+      "total_orders": 5
+    },
+    {
+      "customer_id": "CUST102555",
+      "account_age_days": 986,
+      "return_rate": 0.2,
+      "abusive_return_rate": 0.0,
+      "total_orders": 15
+    },
+    {
+      "customer_id": "CUST100341",
+      "account_age_days": 1471,
+      "return_rate": 0.235,
+      "abusive_return_rate": 0.5,
+      "total_orders": 17
+    }
+  ],
+  "341": [
+    {
+      "customer_id": "CUST103016",
+      "account_age_days": 1125,
+      "return_rate": 0.556,
+      "abusive_return_rate": 0.6,
+      "total_orders": 9
+    },
+    {
+      "customer_id": "CUST100343",
+      "account_age_days": 640,
+      "return_rate": 0.333,
+      "abusive_return_rate": 0.0,
+      "total_orders": 3
+    }
+  ],
+  "352": [
+    {
+      "customer_id": "CUST100354",
+      "account_age_days": 888,
+      "return_rate": 0.143,
+      "abusive_return_rate": 0.0,
+      "total_orders": 7
+    },
+    {
+      "customer_id": "CUST102389",
+      "account_age_days": 1194,
+      "return_rate": 0.167,
+      "abusive_return_rate": 0.0,
+      "total_orders": 18
+    }
+  ],
+  "380": [
+    {
+      "customer_id": "CUST102897",
+      "account_age_days": 711,
+      "return_rate": 0.111,
+      "abusive_return_rate": 0.0,
+      "total_orders": 9
+    },
+    {
+      "customer_id": "CUST100383",
+      "account_age_days": 208,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 2
+    }
+  ],
+  "398": [
+    {
+      "customer_id": "CUST103513",
+      "account_age_days": 185,
+      "return_rate": 1.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 1
+    },
+    {
+      "customer_id": "CUST100404",
+      "account_age_days": 468,
+      "return_rate": 0.429,
+      "abusive_return_rate": 0.0,
+      "total_orders": 7
+    },
+    {
+      "customer_id": "CUST103726",
+      "account_age_days": 1346,
+      "return_rate": 0.364,
+      "abusive_return_rate": 0.0,
+      "total_orders": 11
+    }
+  ],
+  "403": [
+    {
+      "customer_id": "CUST100409",
+      "account_age_days": 225,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 1
+    },
+    {
+      "customer_id": "CUST104560",
+      "account_age_days": 784,
+      "return_rate": 0.625,
+      "abusive_return_rate": 0.6,
+      "total_orders": 8
+    },
+    {
+      "customer_id": "CUST104889",
+      "account_age_days": 1296,
+      "return_rate": 0.3,
+      "abusive_return_rate": 0.0,
+      "total_orders": 10
+    }
+  ],
+  "427": [
+    {
+      "customer_id": "CUST100871",
+      "account_age_days": 585,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 8
+    },
+    {
+      "customer_id": "CUST100433",
+      "account_age_days": 802,
+      "return_rate": 0.267,
+      "abusive_return_rate": 0.0,
+      "total_orders": 15
+    },
+    {
+      "customer_id": "CUST105789",
+      "account_age_days": 593,
+      "return_rate": 0.167,
+      "abusive_return_rate": 0.0,
+      "total_orders": 6
+    }
+  ],
+  "432": [
+    {
+      "customer_id": "CUST100438",
+      "account_age_days": 812,
+      "return_rate": 0.25,
+      "abusive_return_rate": 0.0,
+      "total_orders": 12
+    },
+    {
+      "customer_id": "CUST101064",
+      "account_age_days": 463,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 3
+    },
+    {
+      "customer_id": "CUST105645",
+      "account_age_days": 961,
+      "return_rate": 0.167,
+      "abusive_return_rate": 0.0,
+      "total_orders": 12
+    }
+  ],
+  "440": [
+    {
+      "customer_id": "CUST103547",
+      "account_age_days": 1429,
+      "return_rate": 0.429,
+      "abusive_return_rate": 0.167,
+      "total_orders": 14
+    },
+    {
+      "customer_id": "CUST105371",
+      "account_age_days": 195,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 3
+    },
+    {
+      "customer_id": "CUST104793",
+      "account_age_days": 823,
+      "return_rate": 0.167,
+      "abusive_return_rate": 0.0,
+      "total_orders": 12
+    },
+    {
+      "customer_id": "CUST103454",
+      "account_age_days": 562,
+      "return_rate": 0.333,
+      "abusive_return_rate": 0.0,
+      "total_orders": 6
+    },
+    {
+      "customer_id": "CUST102961",
+      "account_age_days": 756,
+      "return_rate": 0.333,
+      "abusive_return_rate": 0.333,
+      "total_orders": 9
+    },
+    {
+      "customer_id": "CUST100446",
+      "account_age_days": 74,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 1
+    },
+    {
+      "customer_id": "CUST101705",
+      "account_age_days": 1065,
+      "return_rate": 0.368,
+      "abusive_return_rate": 0.0,
+      "total_orders": 19
+    },
+    {
+      "customer_id": "CUST103034",
+      "account_age_days": 702,
+      "return_rate": 0.429,
+      "abusive_return_rate": 0.0,
+      "total_orders": 7
+    },
+    {
+      "customer_id": "CUST105712",
+      "account_age_days": 448,
+      "return_rate": 0.4,
+      "abusive_return_rate": 0.0,
+      "total_orders": 5
+    }
+  ],
+  "450": [
+    {
+      "customer_id": "CUST104479",
+      "account_age_days": 562,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 5
+    },
+    {
+      "customer_id": "CUST100456",
+      "account_age_days": 345,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 3
+    },
+    {
+      "customer_id": "CUST101402",
+      "account_age_days": 452,
+      "return_rate": 0.333,
+      "abusive_return_rate": 0.0,
+      "total_orders": 6
+    },
+    {
+      "customer_id": "CUST102901",
+      "account_age_days": 363,
+      "return_rate": 0.6,
+      "abusive_return_rate": 0.667,
+      "total_orders": 5
+    },
+    {
+      "customer_id": "CUST103512",
+      "account_age_days": 877,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 11
+    }
+  ],
+  "467": [
+    {
+      "customer_id": "CUST100473",
+      "account_age_days": 634,
+      "return_rate": 0.5,
+      "abusive_return_rate": 0.0,
+      "total_orders": 6
+    },
+    {
+      "customer_id": "CUST104262",
+      "account_age_days": 1387,
+      "return_rate": 0.389,
+      "abusive_return_rate": 0.0,
+      "total_orders": 18
+    },
+    {
+      "customer_id": "CUST100931",
+      "account_age_days": 1283,
+      "return_rate": 0.25,
+      "abusive_return_rate": 0.0,
+      "total_orders": 12
+    }
+  ],
+  "496": [
+    {
+      "customer_id": "CUST100503",
+      "account_age_days": 311,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 1
+    },
+    {
+      "customer_id": "CUST101745",
+      "account_age_days": 659,
+      "return_rate": 0.125,
+      "abusive_return_rate": 0.0,
+      "total_orders": 8
+    },
+    {
+      "customer_id": "CUST102881",
+      "account_age_days": 1320,
+      "return_rate": 0.182,
+      "abusive_return_rate": 0.0,
+      "total_orders": 22
+    }
+  ],
+  "519": [
+    {
+      "customer_id": "CUST100527",
+      "account_age_days": 1058,
+      "return_rate": 0.235,
+      "abusive_return_rate": 0.0,
+      "total_orders": 17
+    },
+    {
+      "customer_id": "CUST101060",
+      "account_age_days": 440,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 2
+    },
+    {
+      "customer_id": "CUST104170",
+      "account_age_days": 810,
+      "return_rate": 0.375,
+      "abusive_return_rate": 0.0,
+      "total_orders": 8
+    },
+    {
+      "customer_id": "CUST102920",
+      "account_age_days": 817,
+      "return_rate": 0.5,
+      "abusive_return_rate": 0.0,
+      "total_orders": 4
+    },
+    {
+      "customer_id": "CUST100966",
+      "account_age_days": 1191,
+      "return_rate": 0.294,
+      "abusive_return_rate": 0.0,
+      "total_orders": 17
+    },
+    {
+      "customer_id": "CUST100672",
+      "account_age_days": 401,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 4
+    }
+  ],
+  "532": [
+    {
+      "customer_id": "CUST105988",
+      "account_age_days": 65,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 2
+    },
+    {
+      "customer_id": "CUST100540",
+      "account_age_days": 1222,
+      "return_rate": 0.222,
+      "abusive_return_rate": 0.0,
+      "total_orders": 9
+    },
+    {
+      "customer_id": "CUST103598",
+      "account_age_days": 145,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 2
+    },
+    {
+      "customer_id": "CUST104609",
+      "account_age_days": 1129,
+      "return_rate": 0.222,
+      "abusive_return_rate": 0.0,
+      "total_orders": 9
+    },
+    {
+      "customer_id": "CUST103126",
+      "account_age_days": 84,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 1
+    },
+    {
+      "customer_id": "CUST102386",
+      "account_age_days": 103,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 1
+    }
+  ],
+  "536": [
+    {
+      "customer_id": "CUST101828",
+      "account_age_days": 111,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 2
+    },
+    {
+      "customer_id": "CUST104669",
+      "account_age_days": 322,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 2
+    },
+    {
+      "customer_id": "CUST100545",
+      "account_age_days": 892,
+      "return_rate": 0.231,
+      "abusive_return_rate": 0.0,
+      "total_orders": 13
+    }
+  ],
+  "545": [
+    {
+      "customer_id": "CUST100555",
+      "account_age_days": 986,
+      "return_rate": 0.182,
+      "abusive_return_rate": 0.0,
+      "total_orders": 11
+    },
+    {
+      "customer_id": "CUST101758",
+      "account_age_days": 1456,
+      "return_rate": 0.533,
+      "abusive_return_rate": 0.25,
+      "total_orders": 15
+    },
+    {
+      "customer_id": "CUST104735",
+      "account_age_days": 1136,
+      "return_rate": 0.35,
+      "abusive_return_rate": 0.0,
+      "total_orders": 20
+    }
+  ],
+  "563": [
+    {
+      "customer_id": "CUST100573",
+      "account_age_days": 759,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 5
+    },
+    {
+      "customer_id": "CUST101840",
+      "account_age_days": 911,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 8
+    }
+  ],
+  "570": [
+    {
+      "customer_id": "CUST100745",
+      "account_age_days": 1460,
+      "return_rate": 0.235,
+      "abusive_return_rate": 0.0,
+      "total_orders": 17
+    },
+    {
+      "customer_id": "CUST104675",
+      "account_age_days": 168,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 1
+    },
+    {
+      "customer_id": "CUST100580",
+      "account_age_days": 752,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 10
+    }
+  ],
+  "593": [
+    {
+      "customer_id": "CUST105270",
+      "account_age_days": 111,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 2
+    },
+    {
+      "customer_id": "CUST104684",
+      "account_age_days": 504,
+      "return_rate": 0.2,
+      "abusive_return_rate": 0.0,
+      "total_orders": 5
+    },
+    {
+      "customer_id": "CUST101757",
+      "account_age_days": 1018,
+      "return_rate": 0.1,
+      "abusive_return_rate": 0.0,
+      "total_orders": 10
+    },
+    {
+      "customer_id": "CUST102290",
+      "account_age_days": 846,
+      "return_rate": 0.429,
+      "abusive_return_rate": 0.667,
+      "total_orders": 14
+    },
+    {
+      "customer_id": "CUST100604",
+      "account_age_days": 1266,
+      "return_rate": 0.316,
+      "abusive_return_rate": 0.0,
+      "total_orders": 19
+    },
+    {
+      "customer_id": "CUST100915",
+      "account_age_days": 1087,
+      "return_rate": 0.267,
+      "abusive_return_rate": 0.0,
+      "total_orders": 15
+    },
+    {
+      "customer_id": "CUST105744",
+      "account_age_days": 430,
+      "return_rate": 0.25,
+      "abusive_return_rate": 0.0,
+      "total_orders": 4
+    },
+    {
+      "customer_id": "CUST105576",
+      "account_age_days": 641,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 5
+    },
+    {
+      "customer_id": "CUST101919",
+      "account_age_days": 1364,
+      "return_rate": 0.231,
+      "abusive_return_rate": 0.0,
+      "total_orders": 13
+    }
+  ],
+  "594": [
+    {
+      "customer_id": "CUST104969",
+      "account_age_days": 1161,
+      "return_rate": 0.133,
+      "abusive_return_rate": 0.0,
+      "total_orders": 15
+    },
+    {
+      "customer_id": "CUST100605",
+      "account_age_days": 784,
+      "return_rate": 0.2,
+      "abusive_return_rate": 0.0,
+      "total_orders": 10
+    }
+  ],
+  "597": [
+    {
+      "customer_id": "CUST100608",
+      "account_age_days": 511,
+      "return_rate": 0.143,
+      "abusive_return_rate": 0.0,
+      "total_orders": 7
+    },
+    {
+      "customer_id": "CUST104629",
+      "account_age_days": 311,
+      "return_rate": 0.25,
+      "abusive_return_rate": 0.0,
+      "total_orders": 4
+    }
+  ],
+  "600": [
+    {
+      "customer_id": "CUST101373",
+      "account_age_days": 1413,
+      "return_rate": 0.385,
+      "abusive_return_rate": 0.0,
+      "total_orders": 13
+    },
+    {
+      "customer_id": "CUST101892",
+      "account_age_days": 1276,
+      "return_rate": 0.167,
+      "abusive_return_rate": 0.0,
+      "total_orders": 12
+    },
+    {
+      "customer_id": "CUST100611",
+      "account_age_days": 137,
+      "return_rate": 0.2,
+      "abusive_return_rate": 0.0,
+      "total_orders": 5
+    }
+  ],
+  "601": [
+    {
+      "customer_id": "CUST105094",
+      "account_age_days": 1360,
+      "return_rate": 0.312,
+      "abusive_return_rate": 0.0,
+      "total_orders": 16
+    },
+    {
+      "customer_id": "CUST104258",
+      "account_age_days": 1462,
+      "return_rate": 0.625,
+      "abusive_return_rate": 0.2,
+      "total_orders": 8
+    },
+    {
+      "customer_id": "CUST101084",
+      "account_age_days": 236,
+      "return_rate": 0.429,
+      "abusive_return_rate": 0.667,
+      "total_orders": 7
+    },
+    {
+      "customer_id": "CUST104583",
+      "account_age_days": 1423,
+      "return_rate": 0.267,
+      "abusive_return_rate": 0.25,
+      "total_orders": 15
+    },
+    {
+      "customer_id": "CUST101486",
+      "account_age_days": 1145,
+      "return_rate": 0.333,
+      "abusive_return_rate": 0.0,
+      "total_orders": 9
+    },
+    {
+      "customer_id": "CUST100612",
+      "account_age_days": 119,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 1
+    },
+    {
+      "customer_id": "CUST105735",
+      "account_age_days": 612,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 4
+    },
+    {
+      "customer_id": "CUST103877",
+      "account_age_days": 326,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 2
+    },
+    {
+      "customer_id": "CUST105479",
+      "account_age_days": 961,
+      "return_rate": 0.4,
+      "abusive_return_rate": 0.25,
+      "total_orders": 10
+    }
+  ],
+  "610": [
+    {
+      "customer_id": "CUST100687",
+      "account_age_days": 680,
+      "return_rate": 0.556,
+      "abusive_return_rate": 0.2,
+      "total_orders": 9
+    },
+    {
+      "customer_id": "CUST103687",
+      "account_age_days": 901,
+      "return_rate": 0.3,
+      "abusive_return_rate": 0.0,
+      "total_orders": 10
+    },
+    {
+      "customer_id": "CUST103956",
+      "account_age_days": 626,
+      "return_rate": 0.25,
+      "abusive_return_rate": 1.0,
+      "total_orders": 4
+    },
+    {
+      "customer_id": "CUST101013",
+      "account_age_days": 1414,
+      "return_rate": 0.267,
+      "abusive_return_rate": 0.0,
+      "total_orders": 15
+    },
+    {
+      "customer_id": "CUST104218",
+      "account_age_days": 546,
+      "return_rate": 0.333,
+      "abusive_return_rate": 0.0,
+      "total_orders": 6
+    },
+    {
+      "customer_id": "CUST103295",
+      "account_age_days": 580,
+      "return_rate": 0.333,
+      "abusive_return_rate": 0.0,
+      "total_orders": 6
+    },
+    {
+      "customer_id": "CUST100622",
+      "account_age_days": 489,
+      "return_rate": 0.4,
+      "abusive_return_rate": 0.0,
+      "total_orders": 5
+    },
+    {
+      "customer_id": "CUST105426",
+      "account_age_days": 140,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 1
+    }
+  ],
+  "612": [
+    {
+      "customer_id": "CUST103392",
+      "account_age_days": 468,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 1
+    },
+    {
+      "customer_id": "CUST100624",
+      "account_age_days": 66,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 1
+    },
+    {
+      "customer_id": "CUST102044",
+      "account_age_days": 1211,
+      "return_rate": 0.118,
+      "abusive_return_rate": 0.0,
+      "total_orders": 17
+    },
+    {
+      "customer_id": "CUST101578",
+      "account_age_days": 365,
+      "return_rate": 0.333,
+      "abusive_return_rate": 0.0,
+      "total_orders": 3
+    },
+    {
+      "customer_id": "CUST104492",
+      "account_age_days": 727,
+      "return_rate": 0.182,
+      "abusive_return_rate": 0.0,
+      "total_orders": 11
+    }
+  ],
+  "631": [
+    {
+      "customer_id": "CUST100644",
+      "account_age_days": 1106,
+      "return_rate": 0.118,
+      "abusive_return_rate": 0.0,
+      "total_orders": 17
+    },
+    {
+      "customer_id": "CUST103162",
+      "account_age_days": 1026,
+      "return_rate": 0.188,
+      "abusive_return_rate": 0.0,
+      "total_orders": 16
+    },
+    {
+      "customer_id": "CUST105292",
+      "account_age_days": 953,
+      "return_rate": 0.111,
+      "abusive_return_rate": 0.0,
+      "total_orders": 9
+    }
+  ],
+  "649": [
+    {
+      "customer_id": "CUST104286",
+      "account_age_days": 1022,
+      "return_rate": 0.1,
+      "abusive_return_rate": 0.0,
+      "total_orders": 10
+    },
+    {
+      "customer_id": "CUST101922",
+      "account_age_days": 504,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 4
+    },
+    {
+      "customer_id": "CUST100662",
+      "account_age_days": 125,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 2
+    }
+  ],
+  "654": [
+    {
+      "customer_id": "CUST105164",
+      "account_age_days": 464,
+      "return_rate": 0.286,
+      "abusive_return_rate": 0.0,
+      "total_orders": 7
+    },
+    {
+      "customer_id": "CUST100980",
+      "account_age_days": 548,
+      "return_rate": 0.143,
+      "abusive_return_rate": 0.0,
+      "total_orders": 7
+    },
+    {
+      "customer_id": "CUST103771",
+      "account_age_days": 542,
+      "return_rate": 0.167,
+      "abusive_return_rate": 1.0,
+      "total_orders": 6
+    },
+    {
+      "customer_id": "CUST104057",
+      "account_age_days": 1443,
+      "return_rate": 0.474,
+      "abusive_return_rate": 0.222,
+      "total_orders": 19
+    },
+    {
+      "customer_id": "CUST101130",
+      "account_age_days": 1397,
+      "return_rate": 0.143,
+      "abusive_return_rate": 0.0,
+      "total_orders": 14
+    },
+    {
+      "customer_id": "CUST102906",
+      "account_age_days": 159,
+      "return_rate": 1.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 1
+    },
+    {
+      "customer_id": "CUST100667",
+      "account_age_days": 706,
+      "return_rate": 0.429,
+      "abusive_return_rate": 0.0,
+      "total_orders": 7
+    },
+    {
+      "customer_id": "CUST104060",
+      "account_age_days": 29,
+      "return_rate": 1.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 1
+    },
+    {
+      "customer_id": "CUST101698",
+      "account_age_days": 587,
+      "return_rate": 0.273,
+      "abusive_return_rate": 0.0,
+      "total_orders": 11
+    },
+    {
+      "customer_id": "CUST101370",
+      "account_age_days": 481,
+      "return_rate": 0.5,
+      "abusive_return_rate": 0.0,
+      "total_orders": 2
+    }
+  ],
+  "674": [
+    {
+      "customer_id": "CUST105058",
+      "account_age_days": 1095,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 7
+    },
+    {
+      "customer_id": "CUST100689",
+      "account_age_days": 429,
+      "return_rate": 0.333,
+      "abusive_return_rate": 0.0,
+      "total_orders": 6
+    },
+    {
+      "customer_id": "CUST101230",
+      "account_age_days": 1085,
+      "return_rate": 0.125,
+      "abusive_return_rate": 0.0,
+      "total_orders": 16
+    }
+  ],
+  "697": [
+    {
+      "customer_id": "CUST100714",
+      "account_age_days": 634,
+      "return_rate": 0.3,
+      "abusive_return_rate": 0.0,
+      "total_orders": 10
+    },
+    {
+      "customer_id": "CUST103277",
+      "account_age_days": 861,
+      "return_rate": 0.25,
+      "abusive_return_rate": 0.0,
+      "total_orders": 4
+    }
+  ],
+  "702": [
+    {
+      "customer_id": "CUST105280",
+      "account_age_days": 199,
+      "return_rate": 1.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 1
+    },
+    {
+      "customer_id": "CUST102325",
+      "account_age_days": 858,
+      "return_rate": 0.333,
+      "abusive_return_rate": 0.0,
+      "total_orders": 6
+    },
+    {
+      "customer_id": "CUST101383",
+      "account_age_days": 92,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 1
+    },
+    {
+      "customer_id": "CUST103270",
+      "account_age_days": 1064,
+      "return_rate": 0.111,
+      "abusive_return_rate": 0.5,
+      "total_orders": 18
+    },
+    {
+      "customer_id": "CUST102800",
+      "account_age_days": 1403,
+      "return_rate": 0.312,
+      "abusive_return_rate": 0.2,
+      "total_orders": 16
+    },
+    {
+      "customer_id": "CUST100719",
+      "account_age_days": 710,
+      "return_rate": 0.167,
+      "abusive_return_rate": 0.0,
+      "total_orders": 6
+    },
+    {
+      "customer_id": "CUST102553",
+      "account_age_days": 591,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 5
+    }
+  ],
+  "706": [
+    {
+      "customer_id": "CUST100723",
+      "account_age_days": 960,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 9
+    },
+    {
+      "customer_id": "CUST102490",
+      "account_age_days": 1053,
+      "return_rate": 0.333,
+      "abusive_return_rate": 0.0,
+      "total_orders": 6
+    },
+    {
+      "customer_id": "CUST102050",
+      "account_age_days": 322,
+      "return_rate": 0.5,
+      "abusive_return_rate": 1.0,
+      "total_orders": 2
+    },
+    {
+      "customer_id": "CUST101411",
+      "account_age_days": 743,
+      "return_rate": 0.125,
+      "abusive_return_rate": 0.0,
+      "total_orders": 8
+    },
+    {
+      "customer_id": "CUST103173",
+      "account_age_days": 222,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 1
+    },
+    {
+      "customer_id": "CUST103779",
+      "account_age_days": 990,
+      "return_rate": 0.357,
+      "abusive_return_rate": 0.2,
+      "total_orders": 14
+    },
+    {
+      "customer_id": "CUST101560",
+      "account_age_days": 420,
+      "return_rate": 0.333,
+      "abusive_return_rate": 0.0,
+      "total_orders": 3
+    }
+  ],
+  "745": [
+    {
+      "customer_id": "CUST104486",
+      "account_age_days": 432,
+      "return_rate": 0.333,
+      "abusive_return_rate": 0.0,
+      "total_orders": 3
+    },
+    {
+      "customer_id": "CUST102987",
+      "account_age_days": 166,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 1
+    },
+    {
+      "customer_id": "CUST100763",
+      "account_age_days": 1308,
+      "return_rate": 0.083,
+      "abusive_return_rate": 0.0,
+      "total_orders": 12
+    }
+  ],
+  "776": [
+    {
+      "customer_id": "CUST100795",
+      "account_age_days": 237,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 2
+    },
+    {
+      "customer_id": "CUST103924",
+      "account_age_days": 426,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 4
+    },
+    {
+      "customer_id": "CUST103203",
+      "account_age_days": 1476,
+      "return_rate": 0.211,
+      "abusive_return_rate": 0.0,
+      "total_orders": 19
+    }
+  ],
+  "790": [
+    {
+      "customer_id": "CUST104700",
+      "account_age_days": 1061,
+      "return_rate": 0.4,
+      "abusive_return_rate": 0.333,
+      "total_orders": 15
+    },
+    {
+      "customer_id": "CUST102502",
+      "account_age_days": 770,
+      "return_rate": 0.25,
+      "abusive_return_rate": 0.0,
+      "total_orders": 4
+    },
+    {
+      "customer_id": "CUST100809",
+      "account_age_days": 296,
+      "return_rate": 0.2,
+      "abusive_return_rate": 0.0,
+      "total_orders": 5
+    },
+    {
+      "customer_id": "CUST105910",
+      "account_age_days": 1085,
+      "return_rate": 0.077,
+      "abusive_return_rate": 0.0,
+      "total_orders": 13
+    },
+    {
+      "customer_id": "CUST102395",
+      "account_age_days": 1326,
+      "return_rate": 0.182,
+      "abusive_return_rate": 0.0,
+      "total_orders": 11
+    },
+    {
+      "customer_id": "CUST102076",
+      "account_age_days": 395,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 3
+    },
+    {
+      "customer_id": "CUST103874",
+      "account_age_days": 1161,
+      "return_rate": 0.4,
+      "abusive_return_rate": 0.167,
+      "total_orders": 15
+    },
+    {
+      "customer_id": "CUST104953",
+      "account_age_days": 1191,
+      "return_rate": 0.4,
+      "abusive_return_rate": 0.0,
+      "total_orders": 10
+    }
+  ],
+  "800": [
+    {
+      "customer_id": "CUST102403",
+      "account_age_days": 519,
+      "return_rate": 0.6,
+      "abusive_return_rate": 1.0,
+      "total_orders": 5
+    },
+    {
+      "customer_id": "CUST100820",
+      "account_age_days": 635,
+      "return_rate": 0.5,
+      "abusive_return_rate": 0.0,
+      "total_orders": 4
+    }
+  ],
+  "817": [
+    {
+      "customer_id": "CUST104260",
+      "account_age_days": 1392,
+      "return_rate": 0.25,
+      "abusive_return_rate": 0.6,
+      "total_orders": 20
+    },
+    {
+      "customer_id": "CUST104542",
+      "account_age_days": 583,
+      "return_rate": 0.167,
+      "abusive_return_rate": 0.0,
+      "total_orders": 6
+    },
+    {
+      "customer_id": "CUST100837",
+      "account_age_days": 1317,
+      "return_rate": 0.353,
+      "abusive_return_rate": 0.167,
+      "total_orders": 17
+    },
+    {
+      "customer_id": "CUST100891",
+      "account_age_days": 233,
+      "return_rate": 0.2,
+      "abusive_return_rate": 0.0,
+      "total_orders": 5
+    },
+    {
+      "customer_id": "CUST104177",
+      "account_age_days": 696,
+      "return_rate": 0.1,
+      "abusive_return_rate": 0.0,
+      "total_orders": 10
+    },
+    {
+      "customer_id": "CUST102546",
+      "account_age_days": 1349,
+      "return_rate": 0.222,
+      "abusive_return_rate": 0.0,
+      "total_orders": 18
+    }
+  ],
+  "829": [
+    {
+      "customer_id": "CUST101606",
+      "account_age_days": 1268,
+      "return_rate": 0.1,
+      "abusive_return_rate": 1.0,
+      "total_orders": 10
+    },
+    {
+      "customer_id": "CUST102067",
+      "account_age_days": 190,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 3
+    },
+    {
+      "customer_id": "CUST105365",
+      "account_age_days": 1166,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 12
+    },
+    {
+      "customer_id": "CUST100849",
+      "account_age_days": 124,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 1
+    },
+    {
+      "customer_id": "CUST103619",
+      "account_age_days": 50,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 1
+    },
+    {
+      "customer_id": "CUST104288",
+      "account_age_days": 1133,
+      "return_rate": 0.214,
+      "abusive_return_rate": 0.667,
+      "total_orders": 14
+    },
+    {
+      "customer_id": "CUST103379",
+      "account_age_days": 556,
+      "return_rate": 0.143,
+      "abusive_return_rate": 1.0,
+      "total_orders": 7
+    }
+  ],
+  "847": [
+    {
+      "customer_id": "CUST104822",
+      "account_age_days": 215,
+      "return_rate": 0.5,
+      "abusive_return_rate": 0.0,
+      "total_orders": 2
+    },
+    {
+      "customer_id": "CUST105482",
+      "account_age_days": 1093,
+      "return_rate": 0.1,
+      "abusive_return_rate": 0.0,
+      "total_orders": 10
+    },
+    {
+      "customer_id": "CUST100867",
+      "account_age_days": 1375,
+      "return_rate": 0.167,
+      "abusive_return_rate": 0.0,
+      "total_orders": 12
+    }
+  ],
+  "850": [
+    {
+      "customer_id": "CUST102728",
+      "account_age_days": 634,
+      "return_rate": 0.125,
+      "abusive_return_rate": 0.0,
+      "total_orders": 8
+    },
+    {
+      "customer_id": "CUST104537",
+      "account_age_days": 1098,
+      "return_rate": 0.438,
+      "abusive_return_rate": 0.0,
+      "total_orders": 16
+    },
+    {
+      "customer_id": "CUST100870",
+      "account_age_days": 967,
+      "return_rate": 0.25,
+      "abusive_return_rate": 0.0,
+      "total_orders": 12
+    }
+  ],
+  "851": [
+    {
+      "customer_id": "CUST101701",
+      "account_age_days": 1493,
+      "return_rate": 0.3,
+      "abusive_return_rate": 0.5,
+      "total_orders": 20
+    },
+    {
+      "customer_id": "CUST100872",
+      "account_age_days": 185,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 1
+    },
+    {
+      "customer_id": "CUST102179",
+      "account_age_days": 495,
+      "return_rate": 0.5,
+      "abusive_return_rate": 0.0,
+      "total_orders": 8
+    },
+    {
+      "customer_id": "CUST104463",
+      "account_age_days": 317,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 4
+    }
+  ],
+  "860": [
+    {
+      "customer_id": "CUST100881",
+      "account_age_days": 744,
+      "return_rate": 0.308,
+      "abusive_return_rate": 0.0,
+      "total_orders": 13
+    },
+    {
+      "customer_id": "CUST105859",
+      "account_age_days": 529,
+      "return_rate": 0.091,
+      "abusive_return_rate": 0.0,
+      "total_orders": 11
+    }
+  ],
+  "873": [
+    {
+      "customer_id": "CUST102181",
+      "account_age_days": 722,
+      "return_rate": 0.167,
+      "abusive_return_rate": 0.0,
+      "total_orders": 6
+    },
+    {
+      "customer_id": "CUST102210",
+      "account_age_days": 541,
+      "return_rate": 0.2,
+      "abusive_return_rate": 0.5,
+      "total_orders": 10
+    },
+    {
+      "customer_id": "CUST100895",
+      "account_age_days": 705,
+      "return_rate": 0.571,
+      "abusive_return_rate": 1.0,
+      "total_orders": 7
+    },
+    {
+      "customer_id": "CUST103469",
+      "account_age_days": 1235,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 6
+    },
+    {
+      "customer_id": "CUST102147",
+      "account_age_days": 797,
+      "return_rate": 0.333,
+      "abusive_return_rate": 0.0,
+      "total_orders": 3
+    },
+    {
+      "customer_id": "CUST103989",
+      "account_age_days": 87,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 1
+    }
+  ],
+  "877": [
+    {
+      "customer_id": "CUST100899",
+      "account_age_days": 1142,
+      "return_rate": 0.2,
+      "abusive_return_rate": 0.0,
+      "total_orders": 5
+    },
+    {
+      "customer_id": "CUST102031",
+      "account_age_days": 1451,
+      "return_rate": 0.188,
+      "abusive_return_rate": 0.0,
+      "total_orders": 16
+    }
+  ],
+  "882": [
+    {
+      "customer_id": "CUST102569",
+      "account_age_days": 1399,
+      "return_rate": 0.312,
+      "abusive_return_rate": 0.2,
+      "total_orders": 16
+    },
+    {
+      "customer_id": "CUST100904",
+      "account_age_days": 1385,
+      "return_rate": 0.462,
+      "abusive_return_rate": 0.333,
+      "total_orders": 13
+    },
+    {
+      "customer_id": "CUST105515",
+      "account_age_days": 253,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 1
+    },
+    {
+      "customer_id": "CUST105780",
+      "account_age_days": 443,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 5
+    }
+  ],
+  "891": [
+    {
+      "customer_id": "CUST104468",
+      "account_age_days": 1373,
+      "return_rate": 0.19,
+      "abusive_return_rate": 0.25,
+      "total_orders": 21
+    },
+    {
+      "customer_id": "CUST103951",
+      "account_age_days": 1349,
+      "return_rate": 0.333,
+      "abusive_return_rate": 0.2,
+      "total_orders": 15
+    },
+    {
+      "customer_id": "CUST103142",
+      "account_age_days": 200,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 3
+    },
+    {
+      "customer_id": "CUST100914",
+      "account_age_days": 152,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 1
+    },
+    {
+      "customer_id": "CUST104124",
+      "account_age_days": 281,
+      "return_rate": 0.333,
+      "abusive_return_rate": 0.0,
+      "total_orders": 3
+    },
+    {
+      "customer_id": "CUST105890",
+      "account_age_days": 746,
+      "return_rate": 0.222,
+      "abusive_return_rate": 0.0,
+      "total_orders": 9
+    },
+    {
+      "customer_id": "CUST102310",
+      "account_age_days": 218,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 1
+    }
+  ],
+  "918": [
+    {
+      "customer_id": "CUST100943",
+      "account_age_days": 912,
+      "return_rate": 0.091,
+      "abusive_return_rate": 0.0,
+      "total_orders": 11
+    },
+    {
+      "customer_id": "CUST105551",
+      "account_age_days": 273,
+      "return_rate": 0.667,
+      "abusive_return_rate": 0.0,
+      "total_orders": 3
+    }
+  ],
+  "938": [
+    {
+      "customer_id": "CUST105850",
+      "account_age_days": 929,
+      "return_rate": 0.2,
+      "abusive_return_rate": 0.0,
+      "total_orders": 5
+    },
+    {
+      "customer_id": "CUST100964",
+      "account_age_days": 1486,
+      "return_rate": 0.182,
+      "abusive_return_rate": 0.0,
+      "total_orders": 11
+    },
+    {
+      "customer_id": "CUST102903",
+      "account_age_days": 474,
+      "return_rate": 0.25,
+      "abusive_return_rate": 0.0,
+      "total_orders": 4
+    },
+    {
+      "customer_id": "CUST105540",
+      "account_age_days": 1427,
+      "return_rate": 0.5,
+      "abusive_return_rate": 1.0,
+      "total_orders": 8
+    },
+    {
+      "customer_id": "CUST101134",
+      "account_age_days": 1145,
+      "return_rate": 0.118,
+      "abusive_return_rate": 0.0,
+      "total_orders": 17
+    },
+    {
+      "customer_id": "CUST105585",
+      "account_age_days": 499,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 4
+    },
+    {
+      "customer_id": "CUST101435",
+      "account_age_days": 1261,
+      "return_rate": 0.118,
+      "abusive_return_rate": 0.0,
+      "total_orders": 17
+    }
+  ],
+  "949": [
+    {
+      "customer_id": "CUST101660",
+      "account_age_days": 1127,
+      "return_rate": 0.235,
+      "abusive_return_rate": 0.0,
+      "total_orders": 17
+    },
+    {
+      "customer_id": "CUST100976",
+      "account_age_days": 691,
+      "return_rate": 0.25,
+      "abusive_return_rate": 0.0,
+      "total_orders": 8
+    }
+  ],
+  "956": [
+    {
+      "customer_id": "CUST100984",
+      "account_age_days": 501,
+      "return_rate": 0.125,
+      "abusive_return_rate": 0.0,
+      "total_orders": 8
+    },
+    {
+      "customer_id": "CUST103854",
+      "account_age_days": 1086,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 12
+    }
+  ],
+  "959": [
+    {
+      "customer_id": "CUST103370",
+      "account_age_days": 1043,
+      "return_rate": 0.312,
+      "abusive_return_rate": 1.0,
+      "total_orders": 16
+    },
+    {
+      "customer_id": "CUST100987",
+      "account_age_days": 244,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 1
+    },
+    {
+      "customer_id": "CUST104920",
+      "account_age_days": 56,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 1
+    }
+  ],
+  "970": [
+    {
+      "customer_id": "CUST100998",
+      "account_age_days": 354,
+      "return_rate": 0.667,
+      "abusive_return_rate": 0.0,
+      "total_orders": 3
+    },
+    {
+      "customer_id": "CUST101855",
+      "account_age_days": 1368,
+      "return_rate": 0.312,
+      "abusive_return_rate": 0.2,
+      "total_orders": 16
+    },
+    {
+      "customer_id": "CUST103102",
+      "account_age_days": 855,
+      "return_rate": 0.125,
+      "abusive_return_rate": 0.0,
+      "total_orders": 8
+    },
+    {
+      "customer_id": "CUST102650",
+      "account_age_days": 816,
+      "return_rate": 0.125,
+      "abusive_return_rate": 0.5,
+      "total_orders": 16
+    },
+    {
+      "customer_id": "CUST105195",
+      "account_age_days": 975,
+      "return_rate": 0.059,
+      "abusive_return_rate": 0.0,
+      "total_orders": 17
+    }
+  ],
+  "987": [
+    {
+      "customer_id": "CUST101016",
+      "account_age_days": 1022,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 10
+    },
+    {
+      "customer_id": "CUST103875",
+      "account_age_days": 347,
+      "return_rate": 1.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 1
+    }
+  ],
+  "993": [
+    {
+      "customer_id": "CUST105049",
+      "account_age_days": 208,
+      "return_rate": 0.5,
+      "abusive_return_rate": 0.0,
+      "total_orders": 2
+    },
+    {
+      "customer_id": "CUST103432",
+      "account_age_days": 44,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 2
+    },
+    {
+      "customer_id": "CUST101634",
+      "account_age_days": 880,
+      "return_rate": 0.1,
+      "abusive_return_rate": 0.0,
+      "total_orders": 10
+    },
+    {
+      "customer_id": "CUST103071",
+      "account_age_days": 1442,
+      "return_rate": 0.278,
+      "abusive_return_rate": 0.4,
+      "total_orders": 18
+    },
+    {
+      "customer_id": "CUST103161",
+      "account_age_days": 391,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 3
+    },
+    {
+      "customer_id": "CUST101022",
+      "account_age_days": 19,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 1
+    },
+    {
+      "customer_id": "CUST103236",
+      "account_age_days": 277,
+      "return_rate": 0.5,
+      "abusive_return_rate": 0.0,
+      "total_orders": 2
+    }
+  ],
+  "1021": [
+    {
+      "customer_id": "CUST101729",
+      "account_age_days": 795,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 9
+    },
+    {
+      "customer_id": "CUST104754",
+      "account_age_days": 292,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 4
+    },
+    {
+      "customer_id": "CUST101050",
+      "account_age_days": 219,
+      "return_rate": 0.5,
+      "abusive_return_rate": 0.0,
+      "total_orders": 2
+    }
+  ],
+  "1027": [
+    {
+      "customer_id": "CUST101056",
+      "account_age_days": 24,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 1
+    },
+    {
+      "customer_id": "CUST104869",
+      "account_age_days": 1145,
+      "return_rate": 0.158,
+      "abusive_return_rate": 0.0,
+      "total_orders": 19
+    }
+  ],
+  "1034": [
+    {
+      "customer_id": "CUST101406",
+      "account_age_days": 94,
+      "return_rate": 1.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 1
+    },
+    {
+      "customer_id": "CUST104943",
+      "account_age_days": 1203,
+      "return_rate": 0.111,
+      "abusive_return_rate": 0.0,
+      "total_orders": 9
+    },
+    {
+      "customer_id": "CUST101065",
+      "account_age_days": 1058,
+      "return_rate": 0.211,
+      "abusive_return_rate": 0.25,
+      "total_orders": 19
+    },
+    {
+      "customer_id": "CUST105883",
+      "account_age_days": 180,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 1
+    },
+    {
+      "customer_id": "CUST101743",
+      "account_age_days": 853,
+      "return_rate": 0.2,
+      "abusive_return_rate": 0.667,
+      "total_orders": 15
+    },
+    {
+      "customer_id": "CUST102411",
+      "account_age_days": 606,
+      "return_rate": 0.375,
+      "abusive_return_rate": 0.667,
+      "total_orders": 8
+    },
+    {
+      "customer_id": "CUST103631",
+      "account_age_days": 480,
+      "return_rate": 0.333,
+      "abusive_return_rate": 0.0,
+      "total_orders": 3
+    },
+    {
+      "customer_id": "CUST104062",
+      "account_age_days": 1037,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 12
+    }
+  ],
+  "1042": [
+    {
+      "customer_id": "CUST104201",
+      "account_age_days": 302,
+      "return_rate": 0.5,
+      "abusive_return_rate": 0.0,
+      "total_orders": 2
+    },
+    {
+      "customer_id": "CUST103078",
+      "account_age_days": 305,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 4
+    },
+    {
+      "customer_id": "CUST101073",
+      "account_age_days": 188,
+      "return_rate": 0.333,
+      "abusive_return_rate": 1.0,
+      "total_orders": 3
+    }
+  ],
+  "1080": [
+    {
+      "customer_id": "CUST105417",
+      "account_age_days": 58,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 5
+    },
+    {
+      "customer_id": "CUST103886",
+      "account_age_days": 318,
+      "return_rate": 0.333,
+      "abusive_return_rate": 0.0,
+      "total_orders": 6
+    },
+    {
+      "customer_id": "CUST103170",
+      "account_age_days": 1446,
+      "return_rate": 0.188,
+      "abusive_return_rate": 0.0,
+      "total_orders": 16
+    },
+    {
+      "customer_id": "CUST101749",
+      "account_age_days": 343,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 2
+    },
+    {
+      "customer_id": "CUST102132",
+      "account_age_days": 1324,
+      "return_rate": 0.154,
+      "abusive_return_rate": 0.0,
+      "total_orders": 13
+    },
+    {
+      "customer_id": "CUST101114",
+      "account_age_days": 1051,
+      "return_rate": 0.077,
+      "abusive_return_rate": 0.0,
+      "total_orders": 13
+    },
+    {
+      "customer_id": "CUST104996",
+      "account_age_days": 79,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 2
+    }
+  ],
+  "1088": [
+    {
+      "customer_id": "CUST102098",
+      "account_age_days": 730,
+      "return_rate": 0.2,
+      "abusive_return_rate": 0.0,
+      "total_orders": 10
+    },
+    {
+      "customer_id": "CUST101122",
+      "account_age_days": 710,
+      "return_rate": 0.333,
+      "abusive_return_rate": 0.0,
+      "total_orders": 12
+    }
+  ],
+  "1096": [
+    {
+      "customer_id": "CUST101132",
+      "account_age_days": 1078,
+      "return_rate": 0.2,
+      "abusive_return_rate": 0.0,
+      "total_orders": 15
+    },
+    {
+      "customer_id": "CUST104457",
+      "account_age_days": 1424,
+      "return_rate": 0.071,
+      "abusive_return_rate": 0.0,
+      "total_orders": 14
+    }
+  ],
+  "1118": [
+    {
+      "customer_id": "CUST101155",
+      "account_age_days": 1137,
+      "return_rate": 0.143,
+      "abusive_return_rate": 0.0,
+      "total_orders": 14
+    },
+    {
+      "customer_id": "CUST105069",
+      "account_age_days": 1110,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 13
+    },
+    {
+      "customer_id": "CUST102319",
+      "account_age_days": 252,
+      "return_rate": 0.333,
+      "abusive_return_rate": 1.0,
+      "total_orders": 3
+    }
+  ],
+  "1142": [
+    {
+      "customer_id": "CUST101179",
+      "account_age_days": 772,
+      "return_rate": 0.091,
+      "abusive_return_rate": 1.0,
+      "total_orders": 11
+    },
+    {
+      "customer_id": "CUST101993",
+      "account_age_days": 1103,
+      "return_rate": 0.111,
+      "abusive_return_rate": 0.0,
+      "total_orders": 9
+    },
+    {
+      "customer_id": "CUST105300",
+      "account_age_days": 454,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 5
+    }
+  ],
+  "1158": [
+    {
+      "customer_id": "CUST102687",
+      "account_age_days": 86,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 1
+    },
+    {
+      "customer_id": "CUST101197",
+      "account_age_days": 144,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 1
+    }
+  ],
+  "1178": [
+    {
+      "customer_id": "CUST105914",
+      "account_age_days": 1157,
+      "return_rate": 0.083,
+      "abusive_return_rate": 0.0,
+      "total_orders": 12
+    },
+    {
+      "customer_id": "CUST101217",
+      "account_age_days": 167,
+      "return_rate": 0.167,
+      "abusive_return_rate": 0.0,
+      "total_orders": 6
+    },
+    {
+      "customer_id": "CUST102776",
+      "account_age_days": 720,
+      "return_rate": 0.143,
+      "abusive_return_rate": 0.0,
+      "total_orders": 7
+    }
+  ],
+  "1200": [
+    {
+      "customer_id": "CUST102520",
+      "account_age_days": 1133,
+      "return_rate": 0.071,
+      "abusive_return_rate": 0.0,
+      "total_orders": 14
+    },
+    {
+      "customer_id": "CUST104586",
+      "account_age_days": 1118,
+      "return_rate": 0.062,
+      "abusive_return_rate": 0.0,
+      "total_orders": 16
+    },
+    {
+      "customer_id": "CUST101240",
+      "account_age_days": 875,
+      "return_rate": 0.231,
+      "abusive_return_rate": 0.0,
+      "total_orders": 13
+    }
+  ],
+  "1219": [
+    {
+      "customer_id": "CUST102435",
+      "account_age_days": 1074,
+      "return_rate": 0.182,
+      "abusive_return_rate": 0.5,
+      "total_orders": 11
+    },
+    {
+      "customer_id": "CUST104645",
+      "account_age_days": 99,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 2
+    },
+    {
+      "customer_id": "CUST105986",
+      "account_age_days": 1182,
+      "return_rate": 0.25,
+      "abusive_return_rate": 0.0,
+      "total_orders": 16
+    },
+    {
+      "customer_id": "CUST101259",
+      "account_age_days": 1051,
+      "return_rate": 0.125,
+      "abusive_return_rate": 0.0,
+      "total_orders": 8
+    },
+    {
+      "customer_id": "CUST102902",
+      "account_age_days": 959,
+      "return_rate": 0.375,
+      "abusive_return_rate": 0.0,
+      "total_orders": 8
+    },
+    {
+      "customer_id": "CUST104781",
+      "account_age_days": 1005,
+      "return_rate": 0.286,
+      "abusive_return_rate": 0.0,
+      "total_orders": 14
+    }
+  ],
+  "1227": [
+    {
+      "customer_id": "CUST102894",
+      "account_age_days": 556,
+      "return_rate": 0.143,
+      "abusive_return_rate": 0.0,
+      "total_orders": 7
+    },
+    {
+      "customer_id": "CUST101267",
+      "account_age_days": 871,
+      "return_rate": 0.25,
+      "abusive_return_rate": 0.5,
+      "total_orders": 8
+    },
+    {
+      "customer_id": "CUST101333",
+      "account_age_days": 1210,
+      "return_rate": 0.308,
+      "abusive_return_rate": 0.5,
+      "total_orders": 13
+    },
+    {
+      "customer_id": "CUST105296",
+      "account_age_days": 626,
+      "return_rate": 0.167,
+      "abusive_return_rate": 0.0,
+      "total_orders": 6
+    }
+  ],
+  "1248": [
+    {
+      "customer_id": "CUST101289",
+      "account_age_days": 944,
+      "return_rate": 0.167,
+      "abusive_return_rate": 0.0,
+      "total_orders": 12
+    },
+    {
+      "customer_id": "CUST101791",
+      "account_age_days": 190,
+      "return_rate": 0.111,
+      "abusive_return_rate": 0.0,
+      "total_orders": 9
+    }
+  ],
+  "1255": [
+    {
+      "customer_id": "CUST103053",
+      "account_age_days": 1171,
+      "return_rate": 0.583,
+      "abusive_return_rate": 0.0,
+      "total_orders": 12
+    },
+    {
+      "customer_id": "CUST105810",
+      "account_age_days": 1073,
+      "return_rate": 0.25,
+      "abusive_return_rate": 0.0,
+      "total_orders": 16
+    },
+    {
+      "customer_id": "CUST101296",
+      "account_age_days": 1408,
+      "return_rate": 0.077,
+      "abusive_return_rate": 0.0,
+      "total_orders": 13
+    }
+  ],
+  "1256": [
+    {
+      "customer_id": "CUST101297",
+      "account_age_days": 1375,
+      "return_rate": 0.154,
+      "abusive_return_rate": 0.0,
+      "total_orders": 13
+    },
+    {
+      "customer_id": "CUST102990",
+      "account_age_days": 1009,
+      "return_rate": 0.077,
+      "abusive_return_rate": 0.0,
+      "total_orders": 13
+    }
+  ],
+  "1292": [
+    {
+      "customer_id": "CUST105528",
+      "account_age_days": 1257,
+      "return_rate": 0.2,
+      "abusive_return_rate": 0.333,
+      "total_orders": 15
+    },
+    {
+      "customer_id": "CUST101334",
+      "account_age_days": 1429,
+      "return_rate": 0.2,
+      "abusive_return_rate": 0.0,
+      "total_orders": 20
+    },
+    {
+      "customer_id": "CUST103735",
+      "account_age_days": 280,
+      "return_rate": 0.5,
+      "abusive_return_rate": 0.0,
+      "total_orders": 2
+    },
+    {
+      "customer_id": "CUST103268",
+      "account_age_days": 544,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 7
+    }
+  ],
+  "1302": [
+    {
+      "customer_id": "CUST101344",
+      "account_age_days": 959,
+      "return_rate": 0.375,
+      "abusive_return_rate": 0.0,
+      "total_orders": 8
+    },
+    {
+      "customer_id": "CUST105212",
+      "account_age_days": 1449,
+      "return_rate": 0.111,
+      "abusive_return_rate": 0.0,
+      "total_orders": 18
+    },
+    {
+      "customer_id": "CUST104302",
+      "account_age_days": 334,
+      "return_rate": 0.143,
+      "abusive_return_rate": 0.0,
+      "total_orders": 7
+    },
+    {
+      "customer_id": "CUST104784",
+      "account_age_days": 550,
+      "return_rate": 0.375,
+      "abusive_return_rate": 0.0,
+      "total_orders": 8
+    },
+    {
+      "customer_id": "CUST105074",
+      "account_age_days": 376,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 2
+    },
+    {
+      "customer_id": "CUST105129",
+      "account_age_days": 626,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 13
+    },
+    {
+      "customer_id": "CUST102107",
+      "account_age_days": 646,
+      "return_rate": 0.273,
+      "abusive_return_rate": 0.0,
+      "total_orders": 11
+    },
+    {
+      "customer_id": "CUST102769",
+      "account_age_days": 182,
+      "return_rate": 0.667,
+      "abusive_return_rate": 0.0,
+      "total_orders": 3
+    },
+    {
+      "customer_id": "CUST103970",
+      "account_age_days": 1134,
+      "return_rate": 0.312,
+      "abusive_return_rate": 0.0,
+      "total_orders": 16
+    }
+  ],
+  "1337": [
+    {
+      "customer_id": "CUST101384",
+      "account_age_days": 293,
+      "return_rate": 0.6,
+      "abusive_return_rate": 0.0,
+      "total_orders": 5
+    },
+    {
+      "customer_id": "CUST101873",
+      "account_age_days": 1358,
+      "return_rate": 0.25,
+      "abusive_return_rate": 0.0,
+      "total_orders": 12
+    },
+    {
+      "customer_id": "CUST102940",
+      "account_age_days": 512,
+      "return_rate": 0.167,
+      "abusive_return_rate": 0.0,
+      "total_orders": 6
+    },
+    {
+      "customer_id": "CUST104602",
+      "account_age_days": 225,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 4
+    },
+    {
+      "customer_id": "CUST105282",
+      "account_age_days": 774,
+      "return_rate": 0.125,
+      "abusive_return_rate": 1.0,
+      "total_orders": 8
+    },
+    {
+      "customer_id": "CUST103303",
+      "account_age_days": 337,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 3
+    }
+  ],
+  "1346": [
+    {
+      "customer_id": "CUST101938",
+      "account_age_days": 1216,
+      "return_rate": 0.25,
+      "abusive_return_rate": 0.0,
+      "total_orders": 12
+    },
+    {
+      "customer_id": "CUST105513",
+      "account_age_days": 408,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 4
+    },
+    {
+      "customer_id": "CUST101394",
+      "account_age_days": 722,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 7
+    }
+  ],
+  "1355": [
+    {
+      "customer_id": "CUST101621",
+      "account_age_days": 256,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 3
+    },
+    {
+      "customer_id": "CUST101404",
+      "account_age_days": 722,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 7
+    }
+  ],
+  "1359": [
+    {
+      "customer_id": "CUST105718",
+      "account_age_days": 484,
+      "return_rate": 0.25,
+      "abusive_return_rate": 0.0,
+      "total_orders": 8
+    },
+    {
+      "customer_id": "CUST101409",
+      "account_age_days": 690,
+      "return_rate": 0.429,
+      "abusive_return_rate": 0.0,
+      "total_orders": 7
+    }
+  ],
+  "1384": [
+    {
+      "customer_id": "CUST101495",
+      "account_age_days": 791,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 10
+    },
+    {
+      "customer_id": "CUST101437",
+      "account_age_days": 939,
+      "return_rate": 0.2,
+      "abusive_return_rate": 0.0,
+      "total_orders": 5
+    }
+  ],
+  "1423": [
+    {
+      "customer_id": "CUST101477",
+      "account_age_days": 1189,
+      "return_rate": 0.154,
+      "abusive_return_rate": 0.5,
+      "total_orders": 13
+    },
+    {
+      "customer_id": "CUST104757",
+      "account_age_days": 616,
+      "return_rate": 0.167,
+      "abusive_return_rate": 0.0,
+      "total_orders": 6
+    },
+    {
+      "customer_id": "CUST103786",
+      "account_age_days": 1047,
+      "return_rate": 0.308,
+      "abusive_return_rate": 0.5,
+      "total_orders": 13
+    },
+    {
+      "customer_id": "CUST105444",
+      "account_age_days": 1258,
+      "return_rate": 0.25,
+      "abusive_return_rate": 0.0,
+      "total_orders": 12
+    },
+    {
+      "customer_id": "CUST102693",
+      "account_age_days": 513,
+      "return_rate": 0.333,
+      "abusive_return_rate": 0.0,
+      "total_orders": 3
+    }
+  ],
+  "1429": [
+    {
+      "customer_id": "CUST105884",
+      "account_age_days": 459,
+      "return_rate": 0.143,
+      "abusive_return_rate": 0.0,
+      "total_orders": 7
+    },
+    {
+      "customer_id": "CUST101483",
+      "account_age_days": 546,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 3
+    }
+  ],
+  "1451": [
+    {
+      "customer_id": "CUST103646",
+      "account_age_days": 651,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 5
+    },
+    {
+      "customer_id": "CUST101508",
+      "account_age_days": 723,
+      "return_rate": 0.5,
+      "abusive_return_rate": 0.0,
+      "total_orders": 6
+    }
+  ],
+  "1514": [
+    {
+      "customer_id": "CUST104496",
+      "account_age_days": 751,
+      "return_rate": 0.3,
+      "abusive_return_rate": 0.0,
+      "total_orders": 10
+    },
+    {
+      "customer_id": "CUST101573",
+      "account_age_days": 682,
+      "return_rate": 0.286,
+      "abusive_return_rate": 0.0,
+      "total_orders": 14
+    },
+    {
+      "customer_id": "CUST102473",
+      "account_age_days": 550,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 1
+    }
+  ],
+  "1524": [
+    {
+      "customer_id": "CUST105072",
+      "account_age_days": 1220,
+      "return_rate": 0.222,
+      "abusive_return_rate": 0.0,
+      "total_orders": 9
+    },
+    {
+      "customer_id": "CUST101584",
+      "account_age_days": 116,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 1
+    }
+  ],
+  "1557": [
+    {
+      "customer_id": "CUST102717",
+      "account_age_days": 417,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 3
+    },
+    {
+      "customer_id": "CUST101618",
+      "account_age_days": 1281,
+      "return_rate": 0.154,
+      "abusive_return_rate": 0.0,
+      "total_orders": 13
+    },
+    {
+      "customer_id": "CUST102534",
+      "account_age_days": 493,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 8
+    }
+  ],
+  "1588": [
+    {
+      "customer_id": "CUST105090",
+      "account_age_days": 793,
+      "return_rate": 0.125,
+      "abusive_return_rate": 0.0,
+      "total_orders": 8
+    },
+    {
+      "customer_id": "CUST105832",
+      "account_age_days": 1058,
+      "return_rate": 0.091,
+      "abusive_return_rate": 0.0,
+      "total_orders": 11
+    },
+    {
+      "customer_id": "CUST101652",
+      "account_age_days": 1104,
+      "return_rate": 0.077,
+      "abusive_return_rate": 0.0,
+      "total_orders": 13
+    }
+  ],
+  "1622": [
+    {
+      "customer_id": "CUST103836",
+      "account_age_days": 1225,
+      "return_rate": 0.286,
+      "abusive_return_rate": 0.0,
+      "total_orders": 14
+    },
+    {
+      "customer_id": "CUST101687",
+      "account_age_days": 512,
+      "return_rate": 0.333,
+      "abusive_return_rate": 0.0,
+      "total_orders": 6
+    },
+    {
+      "customer_id": "CUST105448",
+      "account_age_days": 1015,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 7
+    }
+  ],
+  "1714": [
+    {
+      "customer_id": "CUST102089",
+      "account_age_days": 1443,
+      "return_rate": 0.071,
+      "abusive_return_rate": 0.0,
+      "total_orders": 14
+    },
+    {
+      "customer_id": "CUST101790",
+      "account_age_days": 158,
+      "return_rate": 0.333,
+      "abusive_return_rate": 0.0,
+      "total_orders": 3
+    }
+  ],
+  "1718": [
+    {
+      "customer_id": "CUST101796",
+      "account_age_days": 1297,
+      "return_rate": 0.125,
+      "abusive_return_rate": 0.0,
+      "total_orders": 8
+    },
+    {
+      "customer_id": "CUST102584",
+      "account_age_days": 199,
+      "return_rate": 0.25,
+      "abusive_return_rate": 0.0,
+      "total_orders": 4
+    }
+  ],
+  "1779": [
+    {
+      "customer_id": "CUST101862",
+      "account_age_days": 624,
+      "return_rate": 0.5,
+      "abusive_return_rate": 0.2,
+      "total_orders": 10
+    },
+    {
+      "customer_id": "CUST103250",
+      "account_age_days": 516,
+      "return_rate": 0.4,
+      "abusive_return_rate": 0.5,
+      "total_orders": 5
+    },
+    {
+      "customer_id": "CUST105496",
+      "account_age_days": 9,
+      "return_rate": 0.5,
+      "abusive_return_rate": 0.0,
+      "total_orders": 2
+    }
+  ],
+  "1797": [
+    {
+      "customer_id": "CUST101882",
+      "account_age_days": 1408,
+      "return_rate": 0.1,
+      "abusive_return_rate": 0.0,
+      "total_orders": 10
+    },
+    {
+      "customer_id": "CUST102332",
+      "account_age_days": 514,
+      "return_rate": 0.5,
+      "abusive_return_rate": 0.0,
+      "total_orders": 6
+    },
+    {
+      "customer_id": "CUST103880",
+      "account_age_days": 1459,
+      "return_rate": 0.273,
+      "abusive_return_rate": 0.0,
+      "total_orders": 11
+    }
+  ],
+  "1861": [
+    {
+      "customer_id": "CUST101950",
+      "account_age_days": 1234,
+      "return_rate": 0.4,
+      "abusive_return_rate": 0.0,
+      "total_orders": 15
+    },
+    {
+      "customer_id": "CUST105974",
+      "account_age_days": 1359,
+      "return_rate": 0.438,
+      "abusive_return_rate": 0.143,
+      "total_orders": 16
+    },
+    {
+      "customer_id": "CUST102824",
+      "account_age_days": 1092,
+      "return_rate": 0.118,
+      "abusive_return_rate": 0.0,
+      "total_orders": 17
+    },
+    {
+      "customer_id": "CUST103844",
+      "account_age_days": 1282,
+      "return_rate": 0.214,
+      "abusive_return_rate": 0.0,
+      "total_orders": 14
+    }
+  ],
+  "1862": [
+    {
+      "customer_id": "CUST101951",
+      "account_age_days": 45,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 1
+    },
+    {
+      "customer_id": "CUST105274",
+      "account_age_days": 1117,
+      "return_rate": 0.167,
+      "abusive_return_rate": 0.0,
+      "total_orders": 12
+    }
+  ],
+  "1867": [
+    {
+      "customer_id": "CUST104544",
+      "account_age_days": 485,
+      "return_rate": 0.375,
+      "abusive_return_rate": 0.0,
+      "total_orders": 8
+    },
+    {
+      "customer_id": "CUST101958",
+      "account_age_days": 9,
+      "return_rate": 0.5,
+      "abusive_return_rate": 0.0,
+      "total_orders": 2
+    }
+  ],
+  "1908": [
+    {
+      "customer_id": "CUST102002",
+      "account_age_days": 138,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 1
+    },
+    {
+      "customer_id": "CUST105749",
+      "account_age_days": 38,
+      "return_rate": 0.333,
+      "abusive_return_rate": 0.0,
+      "total_orders": 3
+    },
+    {
+      "customer_id": "CUST105392",
+      "account_age_days": 331,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 1
+    },
+    {
+      "customer_id": "CUST102427",
+      "account_age_days": 904,
+      "return_rate": 0.111,
+      "abusive_return_rate": 0.0,
+      "total_orders": 9
+    },
+    {
+      "customer_id": "CUST103228",
+      "account_age_days": 418,
+      "return_rate": 0.6,
+      "abusive_return_rate": 0.0,
+      "total_orders": 5
+    }
+  ],
+  "2004": [
+    {
+      "customer_id": "CUST104249",
+      "account_age_days": 1416,
+      "return_rate": 0.286,
+      "abusive_return_rate": 0.0,
+      "total_orders": 14
+    },
+    {
+      "customer_id": "CUST102711",
+      "account_age_days": 579,
+      "return_rate": 0.125,
+      "abusive_return_rate": 0.0,
+      "total_orders": 8
+    },
+    {
+      "customer_id": "CUST102106",
+      "account_age_days": 1480,
+      "return_rate": 0.278,
+      "abusive_return_rate": 0.0,
+      "total_orders": 18
+    }
+  ],
+  "2023": [
+    {
+      "customer_id": "CUST102126",
+      "account_age_days": 219,
+      "return_rate": 0.25,
+      "abusive_return_rate": 0.0,
+      "total_orders": 4
+    },
+    {
+      "customer_id": "CUST102803",
+      "account_age_days": 385,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 5
+    }
+  ],
+  "2052": [
+    {
+      "customer_id": "CUST102157",
+      "account_age_days": 177,
+      "return_rate": 0.25,
+      "abusive_return_rate": 0.0,
+      "total_orders": 4
+    },
+    {
+      "customer_id": "CUST105265",
+      "account_age_days": 12,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 1
+    },
+    {
+      "customer_id": "CUST105758",
+      "account_age_days": 517,
+      "return_rate": 0.5,
+      "abusive_return_rate": 0.0,
+      "total_orders": 4
+    }
+  ],
+  "2069": [
+    {
+      "customer_id": "CUST104585",
+      "account_age_days": 691,
+      "return_rate": 0.3,
+      "abusive_return_rate": 0.0,
+      "total_orders": 10
+    },
+    {
+      "customer_id": "CUST102174",
+      "account_age_days": 323,
+      "return_rate": 0.4,
+      "abusive_return_rate": 0.0,
+      "total_orders": 5
+    }
+  ],
+  "2078": [
+    {
+      "customer_id": "CUST103350",
+      "account_age_days": 83,
+      "return_rate": 0.5,
+      "abusive_return_rate": 0.0,
+      "total_orders": 2
+    },
+    {
+      "customer_id": "CUST102185",
+      "account_age_days": 1256,
+      "return_rate": 0.071,
+      "abusive_return_rate": 0.0,
+      "total_orders": 14
+    },
+    {
+      "customer_id": "CUST105788",
+      "account_age_days": 301,
+      "return_rate": 0.4,
+      "abusive_return_rate": 0.0,
+      "total_orders": 5
+    }
+  ],
+  "2090": [
+    {
+      "customer_id": "CUST102197",
+      "account_age_days": 356,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 5
+    },
+    {
+      "customer_id": "CUST105606",
+      "account_age_days": 1458,
+      "return_rate": 0.154,
+      "abusive_return_rate": 0.0,
+      "total_orders": 13
+    }
+  ],
+  "2108": [
+    {
+      "customer_id": "CUST103017",
+      "account_age_days": 934,
+      "return_rate": 0.375,
+      "abusive_return_rate": 0.0,
+      "total_orders": 8
+    },
+    {
+      "customer_id": "CUST102216",
+      "account_age_days": 241,
+      "return_rate": 0.286,
+      "abusive_return_rate": 0.0,
+      "total_orders": 7
+    }
+  ],
+  "2152": [
+    {
+      "customer_id": "CUST102262",
+      "account_age_days": 650,
+      "return_rate": 0.222,
+      "abusive_return_rate": 0.0,
+      "total_orders": 9
+    },
+    {
+      "customer_id": "CUST102707",
+      "account_age_days": 865,
+      "return_rate": 0.222,
+      "abusive_return_rate": 0.0,
+      "total_orders": 9
+    }
+  ],
+  "2194": [
+    {
+      "customer_id": "CUST102305",
+      "account_age_days": 1498,
+      "return_rate": 0.211,
+      "abusive_return_rate": 0.0,
+      "total_orders": 19
+    },
+    {
+      "customer_id": "CUST104879",
+      "account_age_days": 262,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 1
+    }
+  ],
+  "2297": [
+    {
+      "customer_id": "CUST102418",
+      "account_age_days": 535,
+      "return_rate": 0.333,
+      "abusive_return_rate": 0.0,
+      "total_orders": 3
+    },
+    {
+      "customer_id": "CUST104414",
+      "account_age_days": 1008,
+      "return_rate": 0.167,
+      "abusive_return_rate": 0.0,
+      "total_orders": 6
+    }
+  ],
+  "2314": [
+    {
+      "customer_id": "CUST102437",
+      "account_age_days": 416,
+      "return_rate": 0.25,
+      "abusive_return_rate": 0.0,
+      "total_orders": 4
+    },
+    {
+      "customer_id": "CUST104582",
+      "account_age_days": 1419,
+      "return_rate": 0.167,
+      "abusive_return_rate": 0.5,
+      "total_orders": 12
+    }
+  ],
+  "2315": [
+    {
+      "customer_id": "CUST105761",
+      "account_age_days": 1084,
+      "return_rate": 0.308,
+      "abusive_return_rate": 0.75,
+      "total_orders": 13
+    },
+    {
+      "customer_id": "CUST102438",
+      "account_age_days": 285,
+      "return_rate": 0.333,
+      "abusive_return_rate": 0.0,
+      "total_orders": 3
+    }
+  ],
+  "2318": [
+    {
+      "customer_id": "CUST102442",
+      "account_age_days": 665,
+      "return_rate": 0.143,
+      "abusive_return_rate": 0.0,
+      "total_orders": 7
+    },
+    {
+      "customer_id": "CUST104846",
+      "account_age_days": 982,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 11
+    },
+    {
+      "customer_id": "CUST105880",
+      "account_age_days": 995,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 8
+    }
+  ],
+  "2347": [
+    {
+      "customer_id": "CUST105704",
+      "account_age_days": 386,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 3
+    },
+    {
+      "customer_id": "CUST102471",
+      "account_age_days": 1174,
+      "return_rate": 0.214,
+      "abusive_return_rate": 0.0,
+      "total_orders": 14
+    }
+  ],
+  "2375": [
+    {
+      "customer_id": "CUST102579",
+      "account_age_days": 284,
+      "return_rate": 1.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 1
+    },
+    {
+      "customer_id": "CUST102501",
+      "account_age_days": 804,
+      "return_rate": 0.125,
+      "abusive_return_rate": 0.0,
+      "total_orders": 8
+    }
+  ],
+  "2378": [
+    {
+      "customer_id": "CUST103679",
+      "account_age_days": 494,
+      "return_rate": 0.333,
+      "abusive_return_rate": 0.0,
+      "total_orders": 6
+    },
+    {
+      "customer_id": "CUST102505",
+      "account_age_days": 1280,
+      "return_rate": 0.167,
+      "abusive_return_rate": 0.0,
+      "total_orders": 12
+    },
+    {
+      "customer_id": "CUST103903",
+      "account_age_days": 922,
+      "return_rate": 0.091,
+      "abusive_return_rate": 1.0,
+      "total_orders": 11
+    }
+  ],
+  "2419": [
+    {
+      "customer_id": "CUST105569",
+      "account_age_days": 1091,
+      "return_rate": 0.4,
+      "abusive_return_rate": 0.0,
+      "total_orders": 10
+    },
+    {
+      "customer_id": "CUST102550",
+      "account_age_days": 351,
+      "return_rate": 1.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 3
+    }
+  ],
+  "2443": [
+    {
+      "customer_id": "CUST105692",
+      "account_age_days": 1026,
+      "return_rate": 0.143,
+      "abusive_return_rate": 0.0,
+      "total_orders": 14
+    },
+    {
+      "customer_id": "CUST102578",
+      "account_age_days": 1298,
+      "return_rate": 0.136,
+      "abusive_return_rate": 0.0,
+      "total_orders": 22
+    },
+    {
+      "customer_id": "CUST104049",
+      "account_age_days": 371,
+      "return_rate": 0.333,
+      "abusive_return_rate": 0.0,
+      "total_orders": 3
+    }
+  ],
+  "2451": [
+    {
+      "customer_id": "CUST102588",
+      "account_age_days": 807,
+      "return_rate": 0.143,
+      "abusive_return_rate": 0.0,
+      "total_orders": 7
+    },
+    {
+      "customer_id": "CUST104445",
+      "account_age_days": 495,
+      "return_rate": 0.111,
+      "abusive_return_rate": 0.0,
+      "total_orders": 9
+    },
+    {
+      "customer_id": "CUST103227",
+      "account_age_days": 625,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 4
+    }
+  ],
+  "2457": [
+    {
+      "customer_id": "CUST105962",
+      "account_age_days": 1284,
+      "return_rate": 0.286,
+      "abusive_return_rate": 0.0,
+      "total_orders": 14
+    },
+    {
+      "customer_id": "CUST103599",
+      "account_age_days": 410,
+      "return_rate": 0.333,
+      "abusive_return_rate": 0.0,
+      "total_orders": 6
+    },
+    {
+      "customer_id": "CUST102594",
+      "account_age_days": 54,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 1
+    }
+  ],
+  "2670": [
+    {
+      "customer_id": "CUST102827",
+      "account_age_days": 894,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 7
+    },
+    {
+      "customer_id": "CUST105605",
+      "account_age_days": 196,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 1
+    }
+  ],
+  "2710": [
+    {
+      "customer_id": "CUST102867",
+      "account_age_days": 205,
+      "return_rate": 1.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 1
+    },
+    {
+      "customer_id": "CUST103841",
+      "account_age_days": 979,
+      "return_rate": 0.1,
+      "abusive_return_rate": 0.0,
+      "total_orders": 10
+    }
+  ],
+  "2762": [
+    {
+      "customer_id": "CUST102929",
+      "account_age_days": 1429,
+      "return_rate": 0.19,
+      "abusive_return_rate": 0.0,
+      "total_orders": 21
+    },
+    {
+      "customer_id": "CUST105908",
+      "account_age_days": 1019,
+      "return_rate": 0.167,
+      "abusive_return_rate": 0.0,
+      "total_orders": 6
+    }
+  ],
+  "2772": [
+    {
+      "customer_id": "CUST104550",
+      "account_age_days": 994,
+      "return_rate": 0.083,
+      "abusive_return_rate": 0.0,
+      "total_orders": 12
+    },
+    {
+      "customer_id": "CUST102939",
+      "account_age_days": 899,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 7
+    }
+  ],
+  "2779": [
+    {
+      "customer_id": "CUST104387",
+      "account_age_days": 1387,
+      "return_rate": 0.062,
+      "abusive_return_rate": 0.0,
+      "total_orders": 16
+    },
+    {
+      "customer_id": "CUST103636",
+      "account_age_days": 549,
+      "return_rate": 0.125,
+      "abusive_return_rate": 0.0,
+      "total_orders": 8
+    },
+    {
+      "customer_id": "CUST102947",
+      "account_age_days": 693,
+      "return_rate": 0.6,
+      "abusive_return_rate": 0.0,
+      "total_orders": 5
+    }
+  ],
+  "2797": [
+    {
+      "customer_id": "CUST102967",
+      "account_age_days": 1154,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 13
+    },
+    {
+      "customer_id": "CUST105526",
+      "account_age_days": 232,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 2
+    }
+  ],
+  "2856": [
+    {
+      "customer_id": "CUST103032",
+      "account_age_days": 76,
+      "return_rate": 1.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 1
+    },
+    {
+      "customer_id": "CUST104916",
+      "account_age_days": 816,
+      "return_rate": 0.222,
+      "abusive_return_rate": 0.0,
+      "total_orders": 9
+    }
+  ],
+  "2874": [
+    {
+      "customer_id": "CUST103052",
+      "account_age_days": 859,
+      "return_rate": 0.5,
+      "abusive_return_rate": 0.0,
+      "total_orders": 10
+    },
+    {
+      "customer_id": "CUST103378",
+      "account_age_days": 612,
+      "return_rate": 0.091,
+      "abusive_return_rate": 0.0,
+      "total_orders": 11
+    },
+    {
+      "customer_id": "CUST105032",
+      "account_age_days": 933,
+      "return_rate": 0.143,
+      "abusive_return_rate": 0.0,
+      "total_orders": 7
+    }
+  ],
+  "2942": [
+    {
+      "customer_id": "CUST105845",
+      "account_age_days": 15,
+      "return_rate": 0.5,
+      "abusive_return_rate": 0.0,
+      "total_orders": 2
+    },
+    {
+      "customer_id": "CUST103127",
+      "account_age_days": 662,
+      "return_rate": 0.25,
+      "abusive_return_rate": 0.0,
+      "total_orders": 4
+    },
+    {
+      "customer_id": "CUST103349",
+      "account_age_days": 704,
+      "return_rate": 0.3,
+      "abusive_return_rate": 0.0,
+      "total_orders": 10
+    }
+  ],
+  "3293": [
+    {
+      "customer_id": "CUST103508",
+      "account_age_days": 1383,
+      "return_rate": 0.222,
+      "abusive_return_rate": 0.0,
+      "total_orders": 18
+    },
+    {
+      "customer_id": "CUST105815",
+      "account_age_days": 1221,
+      "return_rate": 0.125,
+      "abusive_return_rate": 0.0,
+      "total_orders": 16
+    }
+  ],
+  "3310": [
+    {
+      "customer_id": "CUST103528",
+      "account_age_days": 719,
+      "return_rate": 0.667,
+      "abusive_return_rate": 0.0,
+      "total_orders": 6
+    },
+    {
+      "customer_id": "CUST103953",
+      "account_age_days": 1259,
+      "return_rate": 0.5,
+      "abusive_return_rate": 0.0,
+      "total_orders": 12
+    }
+  ],
+  "3333": [
+    {
+      "customer_id": "CUST103552",
+      "account_age_days": 676,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 6
+    },
+    {
+      "customer_id": "CUST104954",
+      "account_age_days": 687,
+      "return_rate": 0.25,
+      "abusive_return_rate": 0.0,
+      "total_orders": 8
+    }
+  ],
+  "3435": [
+    {
+      "customer_id": "CUST105492",
+      "account_age_days": 1046,
+      "return_rate": 0.188,
+      "abusive_return_rate": 0.0,
+      "total_orders": 16
+    },
+    {
+      "customer_id": "CUST103663",
+      "account_age_days": 1030,
+      "return_rate": 0.294,
+      "abusive_return_rate": 0.0,
+      "total_orders": 17
+    }
+  ],
+  "3455": [
+    {
+      "customer_id": "CUST103684",
+      "account_age_days": 1074,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 11
+    },
+    {
+      "customer_id": "CUST103878",
+      "account_age_days": 134,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 5
+    }
+  ],
+  "3467": [
+    {
+      "customer_id": "CUST103698",
+      "account_age_days": 70,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 1
+    },
+    {
+      "customer_id": "CUST105519",
+      "account_age_days": 293,
+      "return_rate": 0.667,
+      "abusive_return_rate": 0.0,
+      "total_orders": 3
+    }
+  ],
+  "3477": [
+    {
+      "customer_id": "CUST105839",
+      "account_age_days": 1122,
+      "return_rate": 0.071,
+      "abusive_return_rate": 0.0,
+      "total_orders": 14
+    },
+    {
+      "customer_id": "CUST103708",
+      "account_age_days": 65,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 1
+    }
+  ],
+  "3489": [
+    {
+      "customer_id": "CUST104545",
+      "account_age_days": 1462,
+      "return_rate": 0.077,
+      "abusive_return_rate": 0.0,
+      "total_orders": 13
+    },
+    {
+      "customer_id": "CUST103721",
+      "account_age_days": 921,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 5
+    }
+  ],
+  "3494": [
+    {
+      "customer_id": "CUST103727",
+      "account_age_days": 752,
+      "return_rate": 0.091,
+      "abusive_return_rate": 0.0,
+      "total_orders": 11
+    },
+    {
+      "customer_id": "CUST105477",
+      "account_age_days": 1178,
+      "return_rate": 0.222,
+      "abusive_return_rate": 0.0,
+      "total_orders": 9
+    }
+  ],
+  "3605": [
+    {
+      "customer_id": "CUST103847",
+      "account_age_days": 865,
+      "return_rate": 0.25,
+      "abusive_return_rate": 0.0,
+      "total_orders": 4
+    },
+    {
+      "customer_id": "CUST105989",
+      "account_age_days": 645,
+      "return_rate": 0.222,
+      "abusive_return_rate": 0.0,
+      "total_orders": 9
+    },
+    {
+      "customer_id": "CUST105064",
+      "account_age_days": 1369,
+      "return_rate": 0.333,
+      "abusive_return_rate": 0.4,
+      "total_orders": 15
+    }
+  ],
+  "3607": [
+    {
+      "customer_id": "CUST105213",
+      "account_age_days": 337,
+      "return_rate": 0.667,
+      "abusive_return_rate": 0.75,
+      "total_orders": 6
+    },
+    {
+      "customer_id": "CUST103849",
+      "account_age_days": 1269,
+      "return_rate": 0.059,
+      "abusive_return_rate": 0.0,
+      "total_orders": 17
+    },
+    {
+      "customer_id": "CUST103917",
+      "account_age_days": 161,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 1
+    }
+  ],
+  "3745": [
+    {
+      "customer_id": "CUST104185",
+      "account_age_days": 400,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 4
+    },
+    {
+      "customer_id": "CUST104007",
+      "account_age_days": 43,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 1
+    }
+  ],
+  "4076": [
+    {
+      "customer_id": "CUST104367",
+      "account_age_days": 55,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 1
+    },
+    {
+      "customer_id": "CUST105187",
+      "account_age_days": 687,
+      "return_rate": 0.111,
+      "abusive_return_rate": 0.0,
+      "total_orders": 9
+    },
+    {
+      "customer_id": "CUST105627",
+      "account_age_days": 1444,
+      "return_rate": 0.304,
+      "abusive_return_rate": 0.0,
+      "total_orders": 23
+    }
+  ],
+  "4199": [
+    {
+      "customer_id": "CUST105272",
+      "account_age_days": 975,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 6
+    },
+    {
+      "customer_id": "CUST104504",
+      "account_age_days": 1208,
+      "return_rate": 0.118,
+      "abusive_return_rate": 0.0,
+      "total_orders": 17
+    },
+    {
+      "customer_id": "CUST104906",
+      "account_age_days": 406,
+      "return_rate": 1.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 2
+    }
+  ],
+  "4219": [
+    {
+      "customer_id": "CUST105498",
+      "account_age_days": 1189,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 8
+    },
+    {
+      "customer_id": "CUST104524",
+      "account_age_days": 1126,
+      "return_rate": 0.154,
+      "abusive_return_rate": 0.0,
+      "total_orders": 13
+    }
+  ],
+  "4298": [
+    {
+      "customer_id": "CUST104617",
+      "account_age_days": 559,
+      "return_rate": 0.25,
+      "abusive_return_rate": 0.0,
+      "total_orders": 4
+    },
+    {
+      "customer_id": "CUST105851",
+      "account_age_days": 707,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 4
+    },
+    {
+      "customer_id": "CUST104773",
+      "account_age_days": 1460,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 16
+    }
+  ],
+  "4423": [
+    {
+      "customer_id": "CUST105578",
+      "account_age_days": 1293,
+      "return_rate": 0.143,
+      "abusive_return_rate": 0.0,
+      "total_orders": 14
+    },
+    {
+      "customer_id": "CUST104749",
+      "account_age_days": 955,
+      "return_rate": 0.25,
+      "abusive_return_rate": 0.0,
+      "total_orders": 8
+    }
+  ],
+  "4432": [
+    {
+      "customer_id": "CUST105798",
+      "account_age_days": 1307,
+      "return_rate": 0.235,
+      "abusive_return_rate": 0.0,
+      "total_orders": 17
+    },
+    {
+      "customer_id": "CUST104760",
+      "account_age_days": 999,
+      "return_rate": 0.222,
+      "abusive_return_rate": 0.0,
+      "total_orders": 9
+    }
+  ],
+  "4599": [
+    {
+      "customer_id": "CUST104968",
+      "account_age_days": 568,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 2
+    },
+    {
+      "customer_id": "CUST104942",
+      "account_age_days": 347,
+      "return_rate": 0.0,
+      "abusive_return_rate": 0.0,
+      "total_orders": 3
+    }
+  ],
+  "5454": [
+    {
+      "customer_id": "CUST105970",
+      "account_age_days": 1464,
+      "return_rate": 0.067,
+      "abusive_return_rate": 0.0,
+      "total_orders": 15
+    },
+    {
+      "customer_id": "CUST105893",
+      "account_age_days": 84,
+      "return_rate": 0.2,
+      "abusive_return_rate": 0.0,
+      "total_orders": 5
+    }
+  ]
+}

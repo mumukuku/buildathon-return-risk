@@ -28,6 +28,9 @@ RING_THRESHOLD = RING_CFG["deployed_threshold"]
 
 SAMPLE_CLUSTERS_DF = pd.read_csv(os.path.join(MODELS_DIR, "abuse_ring_clusters.csv"))
 
+with open(os.path.join(MODELS_DIR, "abuse_ring_members.json")) as f:
+    _MEMBERS_BY_CLUSTER = json.load(f)  # keys are cluster_id as strings
+
 
 # ---------------------------------------------------------------------
 # Plain-English explanation (same deterministic, template-based approach
@@ -112,4 +115,11 @@ def get_sample_clusters(n=6) -> list:
     )
     combined = pd.concat([rings, benign]).sample(frac=1, random_state=7)  # shuffle
     records = combined[RING_FEATURE_COLS + ["cluster_id", "is_true_ring"]].to_dict(orient="records")
+
+    # Attach real member details -- who is actually IN this cluster, not just
+    # aggregate stats. This is what makes the demo concrete: you can see the
+    # actual account IDs and their individual return histories, not just
+    # "size=5, avg_return_rate=0.4".
+    for record in records:
+        record["members"] = _MEMBERS_BY_CLUSTER.get(str(record["cluster_id"]), [])
     return records

@@ -99,11 +99,12 @@ def build_graph(customers: pd.DataFrame) -> nx.Graph:
     return G
 
 
-def extract_clusters(G: nx.Graph, customers: pd.DataFrame, cust_agg: pd.DataFrame) -> pd.DataFrame:
+def extract_clusters(G: nx.Graph, customers: pd.DataFrame, cust_agg: pd.DataFrame):
     cust_lookup = customers.set_index("customer_id")
     agg_lookup = cust_agg.set_index("customer_id")
 
     rows = []
+    members_by_cluster = {}
     for cluster_id, component in enumerate(nx.connected_components(G)):
         if len(component) < 2:
             continue  # singletons aren't "clusters"
@@ -142,7 +143,22 @@ def extract_clusters(G: nx.Graph, customers: pd.DataFrame, cust_agg: pd.DataFram
             "is_true_ring": is_true_ring,
         })
 
-    return pd.DataFrame(rows)
+        # Member-level detail, kept SEPARATE from the cluster aggregate table --
+        # the classifier only ever trains/predicts on the aggregate row above
+        # (member identity is not a model feature), but the demo UI needs to
+        # show WHO is actually in a flagged cluster, not just summary stats.
+        members_by_cluster[cluster_id] = [
+            {
+                "customer_id": cid,
+                "account_age_days": int(cust_lookup.loc[cid, "account_age_days"]),
+                "return_rate": round(float(agg_lookup.loc[cid, "return_rate"]), 3) if cid in agg_lookup.index else 0.0,
+                "abusive_return_rate": round(float(agg_lookup.loc[cid, "abusive_return_rate"]), 3) if cid in agg_lookup.index else 0.0,
+                "total_orders": int(agg_lookup.loc[cid, "total_orders"]) if cid in agg_lookup.index else 0,
+            }
+            for cid in members
+        ]
+
+    return pd.DataFrame(rows), members_by_cluster
 
 
 FEATURE_COLS = [
@@ -241,8 +257,11 @@ def main():
 
     cust_agg = build_customer_aggregates(orders)
     G = build_graph(customers)
-    clusters = extract_clusters(G, customers, cust_agg)
+    clusters, members_by_cluster = extract_clusters(G, customers, cust_agg)
     clusters.to_csv("model/abuse_ring_clusters.csv", index=False)
+    with open("model/abuse_ring_members.json", "w") as f:
+        json.dump({str(k): v for k, v in members_by_cluster.items()}, f, indent=2)
+    print(f"Saved model/abuse_ring_members.json ({len(members_by_cluster)} clusters' worth of member detail)")
 
     clf, metrics = train_and_evaluate(clusters)
 

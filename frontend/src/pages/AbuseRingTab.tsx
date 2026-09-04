@@ -46,7 +46,8 @@ export function AbuseRingTab() {
     result?.verdict === "likely_ring" ? "var(--color-tier-decline)" : "var(--color-tier-approve)";
 
   return (
-    <div className="grid grid-cols-1 gap-6 lg:grid-cols-5">
+    <div className="space-y-6">
+      <div className="grid grid-cols-1 gap-6 lg:grid-cols-5">
       <GlassCard glowColor="var(--color-accent-violet)" className="p-6 lg:col-span-3">
         <h2 className="font-display text-lg font-semibold">Check a cluster</h2>
         <p className="mb-6 text-sm text-gray-500">
@@ -103,6 +104,43 @@ export function AbuseRingTab() {
           </div>
         )}
       </GlassCard>
+      </div>
+
+      {selectedIdx !== null && clusters[selectedIdx]?.members && clusters[selectedIdx].members!.length > 0 && (
+        <GlassCard glowColor={verdictColor} className="p-6">
+          <h3 className="font-display text-lg font-semibold">
+            Who's in this cluster ({clusters[selectedIdx].members!.length} accounts)
+          </h3>
+          <p className="mb-4 text-sm text-gray-500">
+            The actual accounts behind the aggregate stats above -- not just "size=5, avg return rate=40%," but which
+            customer IDs, how old each account is, and each member's individual return history.
+          </p>
+          <div className="overflow-x-auto">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="border-b border-white/10 text-left text-xs uppercase tracking-wide text-gray-500">
+                  <th className="pb-2 pr-4">Customer ID</th>
+                  <th className="pb-2 pr-4">Account age (days)</th>
+                  <th className="pb-2 pr-4">Total orders</th>
+                  <th className="pb-2 pr-4">Return rate</th>
+                  <th className="pb-2">Abusive-return rate</th>
+                </tr>
+              </thead>
+              <tbody className="font-mono text-xs">
+                {clusters[selectedIdx].members!.map((m) => (
+                  <tr key={m.customer_id} className="border-b border-white/5">
+                    <td className="py-2 pr-4">{m.customer_id}</td>
+                    <td className="py-2 pr-4">{m.account_age_days}</td>
+                    <td className="py-2 pr-4">{m.total_orders}</td>
+                    <td className="py-2 pr-4">{(m.return_rate * 100).toFixed(0)}%</td>
+                    <td className="py-2">{(m.abusive_return_rate * 100).toFixed(0)}%</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </GlassCard>
+      )}
     </div>
   );
 }
