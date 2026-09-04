@@ -3,6 +3,6 @@ __pycache__/
 node_modules/
 .vercel
 .env
-.ipynb_checkpoints/
-Notebook/.ipynb_checkpoints/
 .venv/
+.ipynb_checkpoints/
+Notebook/.ipynb_checkpoints
